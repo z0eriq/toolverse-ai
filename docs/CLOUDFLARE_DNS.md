@@ -1,3 +1,17 @@
+## مسار Vercel (الواجهة مجاناً)
+
+الواجهة منشورة على: https://toolverse-web-three.vercel.app  
+الدومين مربوط في المشروع — أضف في Cloudflare:
+
+| Type | Name | Content | Proxy |
+|------|------|---------|-------|
+| A | `@` | `76.76.21.21` | DNS only |
+| A | `www` | `76.76.21.21` | DNS only |
+
+التفاصيل: [docs/VERCEL.md](../docs/VERCEL.md)
+
+---
+
 # ربط tool-verse.online على Cloudflare
 
 المستودع على GitHub: https://github.com/z0eriq/toolverse-ai

@@ -53,3 +53,5 @@ apps/web/src/tools/tools.generated.ts
 # Secrets / OS
 Thumbs.db
 *.pem
+.vercel
+.env*

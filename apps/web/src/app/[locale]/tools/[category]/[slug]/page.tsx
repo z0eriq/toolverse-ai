@@ -25,6 +25,9 @@ import { ToolSatelliteNav } from "@/components/ToolSatelliteNav";
 import { ToolReviews } from "@/components/ToolReviews";
 import { Link } from "@/i18n/navigation";
 import { SATELLITE_KINDS, satelliteLabel } from "@/lib/tool-satellites";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { ToolEditorial } from "@/components/ToolEditorial";
+import { getToolGuide } from "@/content/tool-guides";
 
 export const dynamicParams = true;
 
@@ -215,8 +218,18 @@ export default async function ToolPage({
   const name = localize(manifest.name, locale);
   const description = localize(manifest.description, locale);
   const related = await fetchRelated(slug, manifest.category);
-  const faqs = resolveFaqs(apiTool, fsTool?.manifest ?? null);
-  const howto = resolveHowTo(apiTool, fsTool?.manifest ?? null);
+  const guide = getToolGuide(slug);
+  const faqsFromApi = resolveFaqs(apiTool, fsTool?.manifest ?? null);
+  const faqs =
+    faqsFromApi.length > 0 ? faqsFromApi : (guide?.faqs ?? []);
+  const howtoFromApi = resolveHowTo(apiTool, fsTool?.manifest ?? null);
+  const howto =
+    howtoFromApi.length > 0
+      ? howtoFromApi
+      : (guide?.howTo.map((text, index) => ({
+          name: `Step ${index + 1}`,
+          text,
+        })) ?? []);
   const toolId = apiTool?.tool_id ?? manifest.id;
   const useDynamicRuntime = isDynamic || !FsComponent;
 
@@ -254,6 +267,14 @@ export default async function ToolPage({
           }}
         />
       ) : null}
+
+      <Breadcrumbs
+        items={[
+          { name: "Home", href: "/" },
+          { name: manifest.category, href: `/?category=${manifest.category}` },
+          { name },
+        ]}
+      />
 
       <div className="mb-8 flex flex-wrap items-start justify-between gap-4">
         <div className="max-w-3xl">
@@ -313,6 +334,8 @@ export default async function ToolPage({
           <AffiliateCta toolId={toolId} toolSlug={manifest.slug} />
         </div>
       </div>
+
+      {guide ? <ToolEditorial name={name} guide={guide} /> : null}
 
       {faqs.length > 0 ? (
         <section className="mt-16">

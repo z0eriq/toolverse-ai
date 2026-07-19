@@ -9,6 +9,8 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { SkipLink } from "@/components/SkipLink";
 import { SiteAssistant } from "@/components/SiteAssistant";
+import { CookieNotice } from "@/components/CookieNotice";
+import { jsonLdScript, organizationJsonLd, websiteJsonLd } from "@/lib/seo";
 import "@/styles/globals.css";
 
 const geistSans = Geist({
@@ -62,6 +64,18 @@ export default async function LocaleLayout({
       suppressHydrationWarning
     >
       <body className="bg-atmosphere min-h-screen font-sans antialiased">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: jsonLdScript(organizationJsonLd()),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: jsonLdScript(websiteJsonLd(locale)),
+          }}
+        />
         <NextIntlClientProvider messages={messages}>
           <Providers>
             <SkipLink />
@@ -73,6 +87,7 @@ export default async function LocaleLayout({
               <Footer />
             </div>
             <SiteAssistant />
+            <CookieNotice />
           </Providers>
         </NextIntlClientProvider>
       </body>

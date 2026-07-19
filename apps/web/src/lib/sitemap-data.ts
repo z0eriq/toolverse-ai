@@ -4,6 +4,7 @@ import { AUTHORITY_PAGE_SLUGS } from "@/lib/authority-pages";
 import { getAllTools } from "@/tools/registry";
 import { localizedSitemapEntry } from "@/lib/sitemap-helpers";
 import { SATELLITE_KINDS, allToolSeoPaths } from "@/lib/tool-satellites";
+import { listLocalPosts } from "@/content/blog";
 
 /** Max URL entries per sitemap shard (before locale doubling). */
 export const TOOLS_SITEMAP_PAGE_SIZE = 500;
@@ -69,15 +70,30 @@ export async function toolsSitemapPageCount(): Promise<number> {
 }
 
 async function loadPosts(): Promise<BlogPostListItem[]> {
+  const local: BlogPostListItem[] = listLocalPosts().map((post) => ({
+    slug: post.slug,
+    title: post.title,
+    excerpt: post.excerpt,
+    cover_image: "",
+    published_at: post.published_at,
+    tags: [{ slug: post.category, name: post.category }],
+    author_name: post.author_name,
+    seo_title: post.seo_title,
+    seo_description: post.seo_description,
+  }));
   try {
     const data = await api.blogPosts();
-    if (Array.isArray(data)) return data;
-    if (data && typeof data === "object" && "results" in data) {
-      return data.results;
-    }
-    return [];
+    const remote = Array.isArray(data)
+      ? data
+      : data && typeof data === "object" && "results" in data
+        ? data.results
+        : [];
+    const bySlug = new Map<string, BlogPostListItem>();
+    for (const post of local) bySlug.set(post.slug, post);
+    for (const post of remote) bySlug.set(post.slug, post);
+    return Array.from(bySlug.values());
   } catch {
-    return [];
+    return local;
   }
 }
 
@@ -107,6 +123,12 @@ const STATIC_PATHS: {
   priority: number;
 }[] = [
   { path: "/", changeFrequency: "daily", priority: 1 },
+  { path: "/about", changeFrequency: "monthly", priority: 0.7 },
+  { path: "/contact", changeFrequency: "monthly", priority: 0.65 },
+  { path: "/privacy", changeFrequency: "monthly", priority: 0.6 },
+  { path: "/terms", changeFrequency: "monthly", priority: 0.6 },
+  { path: "/editorial-policy", changeFrequency: "monthly", priority: 0.55 },
+  { path: "/blog", changeFrequency: "daily", priority: 0.75 },
   { path: "/pricing", changeFrequency: "weekly", priority: 0.7 },
   { path: "/developers", changeFrequency: "weekly", priority: 0.65 },
   { path: "/enterprise", changeFrequency: "weekly", priority: 0.7 },
