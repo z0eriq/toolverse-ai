@@ -41,7 +41,8 @@ function programmaticRedirects() {
 }
 
 const nextConfig: NextConfig = {
-  output: "standalone",
+  // Docker/self-host uses standalone; Vercel uses its own Next.js runtime.
+  ...(process.env.VERCEL ? {} : { output: "standalone" as const }),
   reactStrictMode: true,
   poweredByHeader: false,
   images: {

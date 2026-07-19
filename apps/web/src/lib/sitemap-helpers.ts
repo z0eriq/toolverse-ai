@@ -107,3 +107,37 @@ export function sitemapIndexXml(locs: string[]): string {
 ${body}
 </sitemapindex>`;
 }
+
+const KEYWORD_CATEGORIES = new Set([
+  "json",
+  "password",
+  "base64",
+  "uuid",
+  "color",
+  "markdown",
+  "pdf",
+  "image",
+  "text",
+  "hash",
+  "qr",
+]);
+
+/** Map API programmatic path to the public Next.js route. */
+export function programmaticPublicPath(apiPath: string): string {
+  const path = apiPath.replace(/^\/+/, "");
+  if (path.startsWith("best/")) return `/${path}`;
+  if (path.startsWith("tools/for-")) return `/${path}`;
+  if (path.startsWith("hub/")) return `/${path}`;
+  if (path.startsWith("use/")) {
+    return `/use-cases/${path.slice("use/".length)}`;
+  }
+  if (path.startsWith("industry/")) {
+    return `/industries/${path.slice("industry/".length)}`;
+  }
+  if (path.startsWith("compare/")) return `/${path}`;
+  const [category, ...rest] = path.split("/");
+  if (category && rest.length > 0 && KEYWORD_CATEGORIES.has(category)) {
+    return `/c/${category}/${rest.join("/")}`;
+  }
+  return `/${path}`;
+}

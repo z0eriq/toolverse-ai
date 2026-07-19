@@ -1,0 +1,17 @@
+# Local / secrets
+.env
+.env.*
+!.env.example
+apps/web/.env.local
+apps/api/
+**/__pycache__/
+**/.venv/
+**/node_modules/
+**/.next/
+**/coverage/
+**/.pytest_cache/
+**/dist/
+docs/
+infra/
+*.md
+!README.md
