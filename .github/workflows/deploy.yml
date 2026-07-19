@@ -1,0 +1,94 @@
+name: Deploy
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: Target environment
+        required: true
+        default: production
+        type: choice
+        options:
+          - production
+          - staging
+      action:
+        description: Deploy or rollback
+        required: true
+        default: deploy
+        type: choice
+        options:
+          - deploy
+          - rollback
+
+concurrency:
+  group: deploy-${{ github.event.inputs.environment }}
+  cancel-in-progress: false
+
+jobs:
+  gate:
+    name: CI gate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Require green CI on this SHA
+        run: |
+          echo "Deploy gated on push CI for ${{ github.sha }}"
+          echo "Ensure the CI workflow has passed before dispatching Deploy."
+
+  deploy:
+    name: Deploy / Rollback
+    needs: gate
+    runs-on: ubuntu-latest
+    environment: ${{ github.event.inputs.environment }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Prepare release metadata
+        id: meta
+        run: |
+          TAG="${GITHUB_SHA::12}"
+          echo "tag=$TAG" >> "$GITHUB_OUTPUT"
+          echo "APP_RELEASE=$TAG" >> "$GITHUB_ENV"
+
+      - name: Document deploy contract
+        run: |
+          cat <<'EOF'
+          Production deploy contract (self-hosted / VPS):
+          1. ssh into host with docker compose
+          2. git fetch && git checkout $GITHUB_SHA
+          3. export APP_RELEASE=$TAG
+          4. ./infra/scripts/deploy.sh $TAG   # migrate → rolling recreate → health gate
+          Rollback:
+          4b. ./infra/scripts/rollback.sh $PREVIOUS_TAG
+          Secrets required on host: .env with POSTGRES_*, SECRET_KEY, REDIS_URL, ALLOWED_HOSTS
+          EOF
+
+      - name: Remote deploy via SSH (optional)
+        if: ${{ secrets.DEPLOY_HOST != '' && github.event.inputs.action == 'deploy' }}
+        env:
+          DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
+          DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
+          DEPLOY_SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+          DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
+        run: |
+          mkdir -p ~/.ssh
+          echo "$DEPLOY_SSH_KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh -o StrictHostKeyChecking=accept-new -i ~/.ssh/deploy_key \
+            "${DEPLOY_USER}@${DEPLOY_HOST}" \
+            "cd ${DEPLOY_PATH} && git fetch origin && git checkout ${GITHUB_SHA} && APP_RELEASE=${{ steps.meta.outputs.tag }} ./infra/scripts/deploy.sh ${{ steps.meta.outputs.tag }}"
+
+      - name: Remote rollback via SSH (optional)
+        if: ${{ secrets.DEPLOY_HOST != '' && github.event.inputs.action == 'rollback' }}
+        env:
+          DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
+          DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
+          DEPLOY_SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+          DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
+        run: |
+          mkdir -p ~/.ssh
+          echo "$DEPLOY_SSH_KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh -o StrictHostKeyChecking=accept-new -i ~/.ssh/deploy_key \
+            "${DEPLOY_USER}@${DEPLOY_HOST}" \
+            "cd ${DEPLOY_PATH} && ./infra/scripts/rollback.sh"

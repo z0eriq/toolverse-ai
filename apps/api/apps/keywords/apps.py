@@ -1,0 +1,8 @@
+from django.apps import AppConfig
+
+
+class KeywordsConfig(AppConfig):
+    default_auto_field = "django.db.models.BigAutoField"
+    name = "apps.keywords"
+    label = "keywords"
+    verbose_name = "Keywords"

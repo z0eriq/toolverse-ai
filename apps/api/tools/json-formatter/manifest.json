@@ -1,0 +1,33 @@
+{
+  "id": "json-formatter",
+  "slug": "json-formatter",
+  "category": "developer",
+  "name": {
+    "en": "JSON Formatter",
+    "ar": "منسق JSON"
+  },
+  "description": {
+    "en": "Validate, pretty-print, or minify JSON with clear error messages.",
+    "ar": "تحقق من صحة JSON ونسّقه أو صغّره مع رسائل خطأ واضحة."
+  },
+  "version": "1.0.0",
+  "premium": false,
+  "adsenseSlot": "sidebar",
+  "seo": {
+    "title": {
+      "en": "JSON Formatter & Validator — ToolVerse AI",
+      "ar": "منسق ومدقق JSON — ToolVerse AI"
+    },
+    "keywords": [
+      "json formatter",
+      "json validator",
+      "minify json",
+      "pretty print json",
+      "منسق json"
+    ]
+  },
+  "schemaType": "WebApplication",
+  "capabilities": ["client", "server"],
+  "icon": "braces",
+  "order": 1
+}

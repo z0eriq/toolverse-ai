@@ -1,0 +1,22 @@
+{
+  "name": "toolverse-ai",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ToolVerse AI — the largest free online tools platform",
+  "workspaces": [
+    "apps/web",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=@toolverse/web",
+    "dev:web": "npm run dev --workspace=@toolverse/web",
+    "build": "npm run build --workspace=@toolverse/web",
+    "lint": "npm run lint --workspace=@toolverse/web",
+    "typecheck": "npm run typecheck --workspace=@toolverse/web",
+    "generate:tools": "npm run generate:tools --workspace=@toolverse/web",
+    "test": "npm run test --workspace=@toolverse/web"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

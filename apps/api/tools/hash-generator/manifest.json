@@ -1,0 +1,33 @@
+{
+  "id": "hash-generator",
+  "slug": "hash-generator",
+  "category": "developer",
+  "name": {
+    "en": "Hash Generator",
+    "ar": "مولّد التجزئة"
+  },
+  "description": {
+    "en": "Compute MD5, SHA-256, and SHA-512 hashes from text input.",
+    "ar": "احسب تجزئات MD5 وSHA-256 وSHA-512 من النص."
+  },
+  "version": "1.0.0",
+  "premium": false,
+  "adsenseSlot": "sidebar",
+  "seo": {
+    "title": {
+      "en": "MD5 / SHA-256 / SHA-512 Hash Generator — ToolVerse AI",
+      "ar": "مولّد تجزئة MD5 / SHA-256 / SHA-512 — ToolVerse AI"
+    },
+    "keywords": [
+      "md5 hash",
+      "sha256",
+      "sha512",
+      "hash generator",
+      "مولد hash"
+    ]
+  },
+  "schemaType": "WebApplication",
+  "capabilities": ["client", "server"],
+  "icon": "hash",
+  "order": 4
+}

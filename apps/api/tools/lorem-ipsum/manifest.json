@@ -1,0 +1,32 @@
+{
+  "id": "lorem-ipsum",
+  "slug": "lorem-ipsum",
+  "category": "text",
+  "name": {
+    "en": "Lorem Ipsum Generator",
+    "ar": "مولّد لوريم إيبسوم"
+  },
+  "description": {
+    "en": "Generate placeholder paragraphs, sentences, or words of lorem ipsum text.",
+    "ar": "أنشئ فقرات أو جمل أو كلمات وهمية بنص لوريم إيبسوم."
+  },
+  "version": "1.0.0",
+  "premium": false,
+  "adsenseSlot": "sidebar",
+  "seo": {
+    "title": {
+      "en": "Lorem Ipsum Generator — ToolVerse AI",
+      "ar": "مولّد لوريم إيبسوم — ToolVerse AI"
+    },
+    "keywords": [
+      "lorem ipsum",
+      "placeholder text",
+      "dummy text",
+      "نص وهمي"
+    ]
+  },
+  "schemaType": "WebApplication",
+  "capabilities": ["client", "server"],
+  "icon": "align-left",
+  "order": 7
+}

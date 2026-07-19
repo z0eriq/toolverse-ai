@@ -1,0 +1,3885 @@
+[
+  {
+    "slug": "pdf-merge",
+    "category": "pdf",
+    "name": {
+      "en": "Merge PDF"
+    },
+    "description": {
+      "en": "Combine multiple PDF files into one document."
+    },
+    "recipe": "pdf",
+    "ui_schema": {
+      "fields": [
+        {
+          "name": "notes",
+          "type": "textarea",
+          "label": {
+            "en": "Notes"
+          }
+        }
+      ]
+    },
+    "pipeline": [
+      {
+        "type": "template",
+        "template": "PDF job queued: {{ input.notes }}",
+        "target": "output"
+      }
+    ],
+    "seo": {
+      "title": {
+        "en": "Merge PDF — Free Online Tool"
+      },
+      "description": {
+        "en": "Combine multiple PDF files into one document."
+      },
+      "keywords": [
+        "pdf merge",
+        "merge pdf"
+      ]
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Is Merge PDF free?"
+        },
+        "answer": {
+          "en": "Yes, free on ToolVerse AI."
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need to install anything?"
+        },
+        "answer": {
+          "en": "No, it runs in your browser."
+        }
+      }
+    ],
+    "howto": [
+      {
+        "en": "Open the tool page"
+      },
+      {
+        "en": "Enter your input"
+      },
+      {
+        "en": "Click Run and copy the result"
+      }
+    ],
+    "capabilities": [
+      "server"
+    ],
+    "is_viral": false,
+    "share_text": {}
+  },
+  {
+    "slug": "pdf-split",
+    "category": "pdf",
+    "name": {
+      "en": "Split PDF"
+    },
+    "description": {
+      "en": "Split a PDF into separate pages or ranges."
+    },
+    "recipe": "pdf",
+    "ui_schema": {
+      "fields": [
+        {
+          "name": "notes",
+          "type": "textarea",
+          "label": {
+            "en": "Notes"
+          }
+        }
+      ]
+    },
+    "pipeline": [
+      {
+        "type": "template",
+        "template": "PDF job queued: {{ input.notes }}",
+        "target": "output"
+      }
+    ],
+    "seo": {
+      "title": {
+        "en": "Split PDF — Free Online Tool"
+      },
+      "description": {
+        "en": "Split a PDF into separate pages or ranges."
+      },
+      "keywords": [
+        "pdf split",
+        "split pdf"
+      ]
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Is Split PDF free?"
+        },
+        "answer": {
+          "en": "Yes, free on ToolVerse AI."
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need to install anything?"
+        },
+        "answer": {
+          "en": "No, it runs in your browser."
+        }
+      }
+    ],
+    "howto": [
+      {
+        "en": "Open the tool page"
+      },
+      {
+        "en": "Enter your input"
+      },
+      {
+        "en": "Click Run and copy the result"
+      }
+    ],
+    "capabilities": [
+      "server"
+    ],
+    "is_viral": false,
+    "share_text": {}
+  },
+  {
+    "slug": "pdf-compress",
+    "category": "pdf",
+    "name": {
+      "en": "Compress PDF"
+    },
+    "description": {
+      "en": "Reduce PDF file size while keeping quality."
+    },
+    "recipe": "pdf",
+    "ui_schema": {
+      "fields": [
+        {
+          "name": "notes",
+          "type": "textarea",
+          "label": {
+            "en": "Notes"
+          }
+        }
+      ]
+    },
+    "pipeline": [
+      {
+        "type": "template",
+        "template": "PDF job queued: {{ input.notes }}",
+        "target": "output"
+      }
+    ],
+    "seo": {
+      "title": {
+        "en": "Compress PDF — Free Online Tool"
+      },
+      "description": {
+        "en": "Reduce PDF file size while keeping quality."
+      },
+      "keywords": [
+        "pdf compress",
+        "compress pdf"
+      ]
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Is Compress PDF free?"
+        },
+        "answer": {
+          "en": "Yes, free on ToolVerse AI."
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need to install anything?"
+        },
+        "answer": {
+          "en": "No, it runs in your browser."
+        }
+      }
+    ],
+    "howto": [
+      {
+        "en": "Open the tool page"
+      },
+      {
+        "en": "Enter your input"
+      },
+      {
+        "en": "Click Run and copy the result"
+      }
+    ],
+    "capabilities": [
+      "server"
+    ],
+    "is_viral": false,
+    "share_text": {}
+  },
+  {
+    "slug": "pdf-to-images",
+    "category": "pdf",
+    "name": {
+      "en": "PDF to Images"
+    },
+    "description": {
+      "en": "Convert PDF pages into PNG or JPG images."
+    },
+    "recipe": "pdf",
+    "ui_schema": {
+      "fields": [
+        {
+          "name": "notes",
+          "type": "textarea",
+          "label": {
+            "en": "Notes"
+          }
+        }
+      ]
+    },
+    "pipeline": [
+      {
+        "type": "template",
+        "template": "PDF job queued: {{ input.notes }}",
+        "target": "output"
+      }
+    ],
+    "seo": {
+      "title": {
+        "en": "PDF to Images — Free Online Tool"
+      },
+      "description": {
+        "en": "Convert PDF pages into PNG or JPG images."
+      },
+      "keywords": [
+        "pdf to images",
+        "pdf to images"
+      ]
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Is PDF to Images free?"
+        },
+        "answer": {
+          "en": "Yes, free on ToolVerse AI."
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need to install anything?"
+        },
+        "answer": {
+          "en": "No, it runs in your browser."
+        }
+      }
+    ],
+    "howto": [
+      {
+        "en": "Open the tool page"
+      },
+      {
+        "en": "Enter your input"
+      },
+      {
+        "en": "Click Run and copy the result"
+      }
+    ],
+    "capabilities": [
+      "server"
+    ],
+    "is_viral": false,
+    "share_text": {}
+  },
+  {
+    "slug": "images-to-pdf",
+    "category": "pdf",
+    "name": {
+      "en": "Images to PDF"
+    },
+    "description": {
+      "en": "Create a PDF from a set of images."
+    },
+    "recipe": "pdf",
+    "ui_schema": {
+      "fields": [
+        {
+          "name": "notes",
+          "type": "textarea",
+          "label": {
+            "en": "Notes"
+          }
+        }
+      ]
+    },
+    "pipeline": [
+      {
+        "type": "template",
+        "template": "PDF job queued: {{ input.notes }}",
+        "target": "output"
+      }
+    ],
+    "seo": {
+      "title": {
+        "en": "Images to PDF — Free Online Tool"
+      },
+      "description": {
+        "en": "Create a PDF from a set of images."
+      },
+      "keywords": [
+        "images to pdf",
+        "images to pdf"
+      ]
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Is Images to PDF free?"
+        },
+        "answer": {
+          "en": "Yes, free on ToolVerse AI."
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need to install anything?"
+        },
+        "answer": {
+          "en": "No, it runs in your browser."
+        }
+      }
+    ],
+    "howto": [
+      {
+        "en": "Open the tool page"
+      },
+      {
+        "en": "Enter your input"
+      },
+      {
+        "en": "Click Run and copy the result"
+      }
+    ],
+    "capabilities": [
+      "server"
+    ],
+    "is_viral": false,
+    "share_text": {}
+  },
+  {
+    "slug": "pdf-rotate",
+    "category": "pdf",
+    "name": {
+      "en": "Rotate PDF"
+    },
+    "description": {
+      "en": "Rotate PDF pages by 90, 180, or 270 degrees."
+    },
+    "recipe": "pdf",
+    "ui_schema": {
+      "fields": [
+        {
+          "name": "notes",
+          "type": "textarea",
+          "label": {
+            "en": "Notes"
+          }
+        }
+      ]
+    },
+    "pipeline": [
+      {
+        "type": "template",
+        "template": "PDF job queued: {{ input.notes }}",
+        "target": "output"
+      }
+    ],
+    "seo": {
+      "title": {
+        "en": "Rotate PDF — Free Online Tool"
+      },
+      "description": {
+        "en": "Rotate PDF pages by 90, 180, or 270 degrees."
+      },
+      "keywords": [
+        "pdf rotate",
+        "rotate pdf"
+      ]
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Is Rotate PDF free?"
+        },
+        "answer": {
+          "en": "Yes, free on ToolVerse AI."
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need to install anything?"
+        },
+        "answer": {
+          "en": "No, it runs in your browser."
+        }
+      }
+    ],
+    "howto": [
+      {
+        "en": "Open the tool page"
+      },
+      {
+        "en": "Enter your input"
+      },
+      {
+        "en": "Click Run and copy the result"
+      }
+    ],
+    "capabilities": [
+      "server"
+    ],
+    "is_viral": false,
+    "share_text": {}
+  },
+  {
+    "slug": "pdf-unlock",
+    "category": "pdf",
+    "name": {
+      "en": "Unlock PDF"
+    },
+    "description": {
+      "en": "Remove PDF password restrictions when allowed."
+    },
+    "recipe": "pdf",
+    "ui_schema": {
+      "fields": [
+        {
+          "name": "notes",
+          "type": "textarea",
+          "label": {
+            "en": "Notes"
+          }
+        }
+      ]
+    },
+    "pipeline": [
+      {
+        "type": "template",
+        "template": "PDF job queued: {{ input.notes }}",
+        "target": "output"
+      }
+    ],
+    "seo": {
+      "title": {
+        "en": "Unlock PDF — Free Online Tool"
+      },
+      "description": {
+        "en": "Remove PDF password restrictions when allowed."
+      },
+      "keywords": [
+        "pdf unlock",
+        "unlock pdf"
+      ]
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Is Unlock PDF free?"
+        },
+        "answer": {
+          "en": "Yes, free on ToolVerse AI."
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need to install anything?"
+        },
+        "answer": {
+          "en": "No, it runs in your browser."
+        }
+      }
+    ],
+    "howto": [
+      {
+        "en": "Open the tool page"
+      },
+      {
+        "en": "Enter your input"
+      },
+      {
+        "en": "Click Run and copy the result"
+      }
+    ],
+    "capabilities": [
+      "server"
+    ],
+    "is_viral": false,
+    "share_text": {}
+  },
+  {
+    "slug": "pdf-protect",
+    "category": "pdf",
+    "name": {
+      "en": "Protect PDF"
+    },
+    "description": {
+      "en": "Add a password to secure your PDF."
+    },
+    "recipe": "pdf",
+    "ui_schema": {
+      "fields": [
+        {
+          "name": "notes",
+          "type": "textarea",
+          "label": {
+            "en": "Notes"
+          }
+        }
+      ]
+    },
+    "pipeline": [
+      {
+        "type": "template",
+        "template": "PDF job queued: {{ input.notes }}",
+        "target": "output"
+      }
+    ],
+    "seo": {
+      "title": {
+        "en": "Protect PDF — Free Online Tool"
+      },
+      "description": {
+        "en": "Add a password to secure your PDF."
+      },
+      "keywords": [
+        "pdf protect",
+        "protect pdf"
+      ]
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Is Protect PDF free?"
+        },
+        "answer": {
+          "en": "Yes, free on ToolVerse AI."
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need to install anything?"
+        },
+        "answer": {
+          "en": "No, it runs in your browser."
+        }
+      }
+    ],
+    "howto": [
+      {
+        "en": "Open the tool page"
+      },
+      {
+        "en": "Enter your input"
+      },
+      {
+        "en": "Click Run and copy the result"
+      }
+    ],
+    "capabilities": [
+      "server"
+    ],
+    "is_viral": false,
+    "share_text": {}
+  },
+  {
+    "slug": "pdf-page-numbers",
+    "category": "pdf",
+    "name": {
+      "en": "PDF Page Numbers"
+    },
+    "description": {
+      "en": "Add page numbers to a PDF document."
+    },
+    "recipe": "pdf",
+    "ui_schema": {
+      "fields": [
+        {
+          "name": "notes",
+          "type": "textarea",
+          "label": {
+            "en": "Notes"
+          }
+        }
+      ]
+    },
+    "pipeline": [
+      {
+        "type": "template",
+        "template": "PDF job queued: {{ input.notes }}",
+        "target": "output"
+      }
+    ],
+    "seo": {
+      "title": {
+        "en": "PDF Page Numbers — Free Online Tool"
+      },
+      "description": {
+        "en": "Add page numbers to a PDF document."
+      },
+      "keywords": [
+        "pdf page numbers",
+        "pdf page numbers"
+      ]
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Is PDF Page Numbers free?"
+        },
+        "answer": {
+          "en": "Yes, free on ToolVerse AI."
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need to install anything?"
+        },
+        "answer": {
+          "en": "No, it runs in your browser."
+        }
+      }
+    ],
+    "howto": [
+      {
+        "en": "Open the tool page"
+      },
+      {
+        "en": "Enter your input"
+      },
+      {
+        "en": "Click Run and copy the result"
+      }
+    ],
+    "capabilities": [
+      "server"
+    ],
+    "is_viral": false,
+    "share_text": {}
+  },
+  {
+    "slug": "pdf-watermark",
+    "category": "pdf",
+    "name": {
+      "en": "PDF Watermark"
+    },
+    "description": {
+      "en": "Stamp text or image watermarks on PDF pages."
+    },
+    "recipe": "pdf",
+    "ui_schema": {
+      "fields": [
+        {
+          "name": "notes",
+          "type": "textarea",
+          "label": {
+            "en": "Notes"
+          }
+        }
+      ]
+    },
+    "pipeline": [
+      {
+        "type": "template",
+        "template": "PDF job queued: {{ input.notes }}",
+        "target": "output"
+      }
+    ],
+    "seo": {
+      "title": {
+        "en": "PDF Watermark — Free Online Tool"
+      },
+      "description": {
+        "en": "Stamp text or image watermarks on PDF pages."
+      },
+      "keywords": [
+        "pdf watermark",
+        "pdf watermark"
+      ]
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Is PDF Watermark free?"
+        },
+        "answer": {
+          "en": "Yes, free on ToolVerse AI."
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need to install anything?"
+        },
+        "answer": {
+          "en": "No, it runs in your browser."
+        }
+      }
+    ],
+    "howto": [
+      {
+        "en": "Open the tool page"
+      },
+      {
+        "en": "Enter your input"
+      },
+      {
+        "en": "Click Run and copy the result"
+      }
+    ],
+    "capabilities": [
+      "server"
+    ],
+    "is_viral": false,
+    "share_text": {}
+  },
+  {
+    "slug": "image-compress",
+    "category": "images",
+    "name": {
+      "en": "Image Compress"
+    },
+    "description": {
+      "en": "Compress JPG and PNG images online."
+    },
+    "recipe": "image",
+    "ui_schema": {
+      "fields": [
+        {
+          "name": "url",
+          "type": "textarea",
+          "label": {
+            "en": "Image URL"
+          }
+        }
+      ]
+    },
+    "pipeline": [
+      {
+        "type": "template",
+        "template": "Image result for {{ input.url }}",
+        "target": "output"
+      }
+    ],
+    "seo": {
+      "title": {
+        "en": "Image Compress — Free Online Tool"
+      },
+      "description": {
+        "en": "Compress JPG and PNG images online."
+      },
+      "keywords": [
+        "image compress",
+        "image compress"
+      ]
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Is Image Compress free?"
+        },
+        "answer": {
+          "en": "Yes, free on ToolVerse AI."
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need to install anything?"
+        },
+        "answer": {
+          "en": "No, it runs in your browser."
+        }
+      }
+    ],
+    "howto": [
+      {
+        "en": "Open the tool page"
+      },
+      {
+        "en": "Enter your input"
+      },
+      {
+        "en": "Click Run and copy the result"
+      }
+    ],
+    "capabilities": [
+      "server"
+    ],
+    "is_viral": true,
+    "share_text": {
+      "en": "Try Image Compress free on ToolVerse AI"
+    }
+  },
+  {
+    "slug": "image-resize",
+    "category": "images",
+    "name": {
+      "en": "Image Resize"
+    },
+    "description": {
+      "en": "Resize images to exact width and height."
+    },
+    "recipe": "image",
+    "ui_schema": {
+      "fields": [
+        {
+          "name": "url",
+          "type": "textarea",
+          "label": {
+            "en": "Image URL"
+          }
+        }
+      ]
+    },
+    "pipeline": [
+      {
+        "type": "template",
+        "template": "Image result for {{ input.url }}",
+        "target": "output"
+      }
+    ],
+    "seo": {
+      "title": {
+        "en": "Image Resize — Free Online Tool"
+      },
+      "description": {
+        "en": "Resize images to exact width and height."
+      },
+      "keywords": [
+        "image resize",
+        "image resize"
+      ]
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Is Image Resize free?"
+        },
+        "answer": {
+          "en": "Yes, free on ToolVerse AI."
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need to install anything?"
+        },
+        "answer": {
+          "en": "No, it runs in your browser."
+        }
+      }
+    ],
+    "howto": [
+      {
+        "en": "Open the tool page"
+      },
+      {
+        "en": "Enter your input"
+      },
+      {
+        "en": "Click Run and copy the result"
+      }
+    ],
+    "capabilities": [
+      "server"
+    ],
+    "is_viral": false,
+    "share_text": {}
+  },
+  {
+    "slug": "image-crop",
+    "category": "images",
+    "name": {
+      "en": "Image Crop"
+    },
+    "description": {
+      "en": "Crop images to a custom region."
+    },
+    "recipe": "image",
+    "ui_schema": {
+      "fields": [
+        {
+          "name": "url",
+          "type": "textarea",
+          "label": {
+            "en": "Image URL"
+          }
+        }
+      ]
+    },
+    "pipeline": [
+      {
+        "type": "template",
+        "template": "Image result for {{ input.url }}",
+        "target": "output"
+      }
+    ],
+    "seo": {
+      "title": {
+        "en": "Image Crop — Free Online Tool"
+      },
+      "description": {
+        "en": "Crop images to a custom region."
+      },
+      "keywords": [
+        "image crop",
+        "image crop"
+      ]
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Is Image Crop free?"
+        },
+        "answer": {
+          "en": "Yes, free on ToolVerse AI."
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need to install anything?"
+        },
+        "answer": {
+          "en": "No, it runs in your browser."
+        }
+      }
+    ],
+    "howto": [
+      {
+        "en": "Open the tool page"
+      },
+      {
+        "en": "Enter your input"
+      },
+      {
+        "en": "Click Run and copy the result"
+      }
+    ],
+    "capabilities": [
+      "server"
+    ],
+    "is_viral": false,
+    "share_text": {}
+  },
+  {
+    "slug": "image-convert",
+    "category": "images",
+    "name": {
+      "en": "Image Convert"
+    },
+    "description": {
+      "en": "Convert between JPG, PNG, WebP, and more."
+    },
+    "recipe": "image",
+    "ui_schema": {
+      "fields": [
+        {
+          "name": "url",
+          "type": "textarea",
+          "label": {
+            "en": "Image URL"
+          }
+        }
+      ]
+    },
+    "pipeline": [
+      {
+        "type": "template",
+        "template": "Image result for {{ input.url }}",
+        "target": "output"
+      }
+    ],
+    "seo": {
+      "title": {
+        "en": "Image Convert — Free Online Tool"
+      },
+      "description": {
+        "en": "Convert between JPG, PNG, WebP, and more."
+      },
+      "keywords": [
+        "image convert",
+        "image convert"
+      ]
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Is Image Convert free?"
+        },
+        "answer": {
+          "en": "Yes, free on ToolVerse AI."
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need to install anything?"
+        },
+        "answer": {
+          "en": "No, it runs in your browser."
+        }
+      }
+    ],
+    "howto": [
+      {
+        "en": "Open the tool page"
+      },
+      {
+        "en": "Enter your input"
+      },
+      {
+        "en": "Click Run and copy the result"
+      }
+    ],
+    "capabilities": [
+      "server"
+    ],
+    "is_viral": false,
+    "share_text": {}
+  },
+  {
+    "slug": "image-to-base64",
+    "category": "images",
+    "name": {
+      "en": "Image to Base64"
+    },
+    "description": {
+      "en": "Encode an image as a Base64 data URL."
+    },
+    "recipe": "image",
+    "ui_schema": {
+      "fields": [
+        {
+          "name": "url",
+          "type": "textarea",
+          "label": {
+            "en": "Image URL"
+          }
+        }
+      ]
+    },
+    "pipeline": [
+      {
+        "type": "template",
+        "template": "Image result for {{ input.url }}",
+        "target": "output"
+      }
+    ],
+    "seo": {
+      "title": {
+        "en": "Image to Base64 — Free Online Tool"
+      },
+      "description": {
+        "en": "Encode an image as a Base64 data URL."
+      },
+      "keywords": [
+        "image to base64",
+        "image to base64"
+      ]
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Is Image to Base64 free?"
+        },
+        "answer": {
+          "en": "Yes, free on ToolVerse AI."
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need to install anything?"
+        },
+        "answer": {
+          "en": "No, it runs in your browser."
+        }
+      }
+    ],
+    "howto": [
+      {
+        "en": "Open the tool page"
+      },
+      {
+        "en": "Enter your input"
+      },
+      {
+        "en": "Click Run and copy the result"
+      }
+    ],
+    "capabilities": [
+      "server"
+    ],
+    "is_viral": false,
+    "share_text": {}
+  },
+  {
+    "slug": "base64-to-image",
+    "category": "images",
+    "name": {
+      "en": "Base64 to Image"
+    },
+    "description": {
+      "en": "Decode Base64 strings into downloadable images."
+    },
+    "recipe": "image",
+    "ui_schema": {
+      "fields": [
+        {
+          "name": "url",
+          "type": "textarea",
+          "label": {
+            "en": "Image URL"
+          }
+        }
+      ]
+    },
+    "pipeline": [
+      {
+        "type": "template",
+        "template": "Image result for {{ input.url }}",
+        "target": "output"
+      }
+    ],
+    "seo": {
+      "title": {
+        "en": "Base64 to Image — Free Online Tool"
+      },
+      "description": {
+        "en": "Decode Base64 strings into downloadable images."
+      },
+      "keywords": [
+        "base64 to image",
+        "base64 to image"
+      ]
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Is Base64 to Image free?"
+        },
+        "answer": {
+          "en": "Yes, free on ToolVerse AI."
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need to install anything?"
+        },
+        "answer": {
+          "en": "No, it runs in your browser."
+        }
+      }
+    ],
+    "howto": [
+      {
+        "en": "Open the tool page"
+      },
+      {
+        "en": "Enter your input"
+      },
+      {
+        "en": "Click Run and copy the result"
+      }
+    ],
+    "capabilities": [
+      "server"
+    ],
+    "is_viral": false,
+    "share_text": {}
+  },
+  {
+    "slug": "image-rotate",
+    "category": "images",
+    "name": {
+      "en": "Image Rotate"
+    },
+    "description": {
+      "en": "Rotate images left or right."
+    },
+    "recipe": "image",
+    "ui_schema": {
+      "fields": [
+        {
+          "name": "url",
+          "type": "textarea",
+          "label": {
+            "en": "Image URL"
+          }
+        }
+      ]
+    },
+    "pipeline": [
+      {
+        "type": "template",
+        "template": "Image result for {{ input.url }}",
+        "target": "output"
+      }
+    ],
+    "seo": {
+      "title": {
+        "en": "Image Rotate — Free Online Tool"
+      },
+      "description": {
+        "en": "Rotate images left or right."
+      },
+      "keywords": [
+        "image rotate",
+        "image rotate"
+      ]
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Is Image Rotate free?"
+        },
+        "answer": {
+          "en": "Yes, free on ToolVerse AI."
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need to install anything?"
+        },
+        "answer": {
+          "en": "No, it runs in your browser."
+        }
+      }
+    ],
+    "howto": [
+      {
+        "en": "Open the tool page"
+      },
+      {
+        "en": "Enter your input"
+      },
+      {
+        "en": "Click Run and copy the result"
+      }
+    ],
+    "capabilities": [
+      "server"
+    ],
+    "is_viral": false,
+    "share_text": {}
+  },
+  {
+    "slug": "image-flip",
+    "category": "images",
+    "name": {
+      "en": "Image Flip"
+    },
+    "description": {
+      "en": "Flip images horizontally or vertically."
+    },
+    "recipe": "image",
+    "ui_schema": {
+      "fields": [
+        {
+          "name": "url",
+          "type": "textarea",
+          "label": {
+            "en": "Image URL"
+          }
+        }
+      ]
+    },
+    "pipeline": [
+      {
+        "type": "template",
+        "template": "Image result for {{ input.url }}",
+        "target": "output"
+      }
+    ],
+    "seo": {
+      "title": {
+        "en": "Image Flip — Free Online Tool"
+      },
+      "description": {
+        "en": "Flip images horizontally or vertically."
+      },
+      "keywords": [
+        "image flip",
+        "image flip"
+      ]
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Is Image Flip free?"
+        },
+        "answer": {
+          "en": "Yes, free on ToolVerse AI."
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need to install anything?"
+        },
+        "answer": {
+          "en": "No, it runs in your browser."
+        }
+      }
+    ],
+    "howto": [
+      {
+        "en": "Open the tool page"
+      },
+      {
+        "en": "Enter your input"
+      },
+      {
+        "en": "Click Run and copy the result"
+      }
+    ],
+    "capabilities": [
+      "server"
+    ],
+    "is_viral": false,
+    "share_text": {}
+  },
+  {
+    "slug": "bg-remove-stub",
+    "category": "images",
+    "name": {
+      "en": "Background Remove"
+    },
+    "description": {
+      "en": "Remove image backgrounds with a simple pipeline."
+    },
+    "recipe": "image",
+    "ui_schema": {
+      "fields": [
+        {
+          "name": "url",
+          "type": "textarea",
+          "label": {
+            "en": "Image URL"
+          }
+        }
+      ]
+    },
+    "pipeline": [
+      {
+        "type": "template",
+        "template": "Image result for {{ input.url }}",
+        "target": "output"
+      }
+    ],
+    "seo": {
+      "title": {
+        "en": "Background Remove — Free Online Tool"
+      },
+      "description": {
+        "en": "Remove image backgrounds with a simple pipeline."
+      },
+      "keywords": [
+        "bg remove stub",
+        "background remove"
+      ]
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Is Background Remove free?"
+        },
+        "answer": {
+          "en": "Yes, free on ToolVerse AI."
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need to install anything?"
+        },
+        "answer": {
+          "en": "No, it runs in your browser."
+        }
+      }
+    ],
+    "howto": [
+      {
+        "en": "Open the tool page"
+      },
+      {
+        "en": "Enter your input"
+      },
+      {
+        "en": "Click Run and copy the result"
+      }
+    ],
+    "capabilities": [
+      "server"
+    ],
+    "is_viral": true,
+    "share_text": {
+      "en": "Try Background Remove free on ToolVerse AI"
+    }
+  },
+  {
+    "slug": "image-metadata",
+    "category": "images",
+    "name": {
+      "en": "Image Metadata"
+    },
+    "description": {
+      "en": "Inspect EXIF and basic image metadata."
+    },
+    "recipe": "image",
+    "ui_schema": {
+      "fields": [
+        {
+          "name": "url",
+          "type": "textarea",
+          "label": {
+            "en": "Image URL"
+          }
+        }
+      ]
+    },
+    "pipeline": [
+      {
+        "type": "template",
+        "template": "Image result for {{ input.url }}",
+        "target": "output"
+      }
+    ],
+    "seo": {
+      "title": {
+        "en": "Image Metadata — Free Online Tool"
+      },
+      "description": {
+        "en": "Inspect EXIF and basic image metadata."
+      },
+      "keywords": [
+        "image metadata",
+        "image metadata"
+      ]
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Is Image Metadata free?"
+        },
+        "answer": {
+          "en": "Yes, free on ToolVerse AI."
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need to install anything?"
+        },
+        "answer": {
+          "en": "No, it runs in your browser."
+        }
+      }
+    ],
+    "howto": [
+      {
+        "en": "Open the tool page"
+      },
+      {
+        "en": "Enter your input"
+      },
+      {
+        "en": "Click Run and copy the result"
+      }
+    ],
+    "capabilities": [
+      "server"
+    ],
+    "is_viral": false,
+    "share_text": {}
+  },
+  {
+    "slug": "ai-summarizer",
+    "category": "ai",
+    "name": {
+      "en": "AI Summarizer"
+    },
+    "description": {
+      "en": "Summarize long text into concise bullet points."
+    },
+    "recipe": "ai",
+    "ui_schema": {
+      "fields": [
+        {
+          "name": "text",
+          "type": "textarea",
+          "label": {
+            "en": "Text"
+          }
+        }
+      ]
+    },
+    "pipeline": [
+      {
+        "type": "template",
+        "template": "Summary draft:\\n{{ input.text }}",
+        "target": "output"
+      }
+    ],
+    "seo": {
+      "title": {
+        "en": "AI Summarizer — Free Online Tool"
+      },
+      "description": {
+        "en": "Summarize long text into concise bullet points."
+      },
+      "keywords": [
+        "ai summarizer",
+        "ai summarizer"
+      ]
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Is AI Summarizer free?"
+        },
+        "answer": {
+          "en": "Yes, free on ToolVerse AI."
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need to install anything?"
+        },
+        "answer": {
+          "en": "No, it runs in your browser."
+        }
+      }
+    ],
+    "howto": [
+      {
+        "en": "Open the tool page"
+      },
+      {
+        "en": "Enter your input"
+      },
+      {
+        "en": "Click Run and copy the result"
+      }
+    ],
+    "capabilities": [
+      "server"
+    ],
+    "is_viral": true,
+    "share_text": {
+      "en": "Try AI Summarizer free on ToolVerse AI"
+    }
+  },
+  {
+    "slug": "ai-rewriter",
+    "category": "ai",
+    "name": {
+      "en": "AI Rewriter"
+    },
+    "description": {
+      "en": "Rewrite text for clarity and tone."
+    },
+    "recipe": "ai",
+    "ui_schema": {
+      "fields": [
+        {
+          "name": "text",
+          "type": "textarea",
+          "label": {
+            "en": "Text"
+          }
+        }
+      ]
+    },
+    "pipeline": [
+      {
+        "type": "transform",
+        "op": "uppercase",
+        "source": "input.text",
+        "target": "output"
+      }
+    ],
+    "seo": {
+      "title": {
+        "en": "AI Rewriter — Free Online Tool"
+      },
+      "description": {
+        "en": "Rewrite text for clarity and tone."
+      },
+      "keywords": [
+        "ai rewriter",
+        "ai rewriter"
+      ]
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Is AI Rewriter free?"
+        },
+        "answer": {
+          "en": "Yes, free on ToolVerse AI."
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need to install anything?"
+        },
+        "answer": {
+          "en": "No, it runs in your browser."
+        }
+      }
+    ],
+    "howto": [
+      {
+        "en": "Open the tool page"
+      },
+      {
+        "en": "Enter your input"
+      },
+      {
+        "en": "Click Run and copy the result"
+      }
+    ],
+    "capabilities": [
+      "server"
+    ],
+    "is_viral": true,
+    "share_text": {
+      "en": "Try AI Rewriter free on ToolVerse AI"
+    }
+  },
+  {
+    "slug": "ai-headline-generator",
+    "category": "ai",
+    "name": {
+      "en": "AI Headline Generator"
+    },
+    "description": {
+      "en": "Generate catchy headlines from a topic."
+    },
+    "recipe": "ai",
+    "ui_schema": {
+      "fields": [
+        {
+          "name": "text",
+          "type": "textarea",
+          "label": {
+            "en": "Text"
+          }
+        }
+      ]
+    },
+    "pipeline": [
+      {
+        "type": "transform",
+        "op": "uppercase",
+        "source": "input.text",
+        "target": "output"
+      }
+    ],
+    "seo": {
+      "title": {
+        "en": "AI Headline Generator — Free Online Tool"
+      },
+      "description": {
+        "en": "Generate catchy headlines from a topic."
+      },
+      "keywords": [
+        "ai headline generator",
+        "ai headline generator"
+      ]
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Is AI Headline Generator free?"
+        },
+        "answer": {
+          "en": "Yes, free on ToolVerse AI."
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need to install anything?"
+        },
+        "answer": {
+          "en": "No, it runs in your browser."
+        }
+      }
+    ],
+    "howto": [
+      {
+        "en": "Open the tool page"
+      },
+      {
+        "en": "Enter your input"
+      },
+      {
+        "en": "Click Run and copy the result"
+      }
+    ],
+    "capabilities": [
+      "server"
+    ],
+    "is_viral": true,
+    "share_text": {
+      "en": "Try AI Headline Generator free on ToolVerse AI"
+    }
+  },
+  {
+    "slug": "ai-email-writer",
+    "category": "ai",
+    "name": {
+      "en": "AI Email Writer"
+    },
+    "description": {
+      "en": "Draft professional emails from a short brief."
+    },
+    "recipe": "ai",
+    "ui_schema": {
+      "fields": [
+        {
+          "name": "text",
+          "type": "textarea",
+          "label": {
+            "en": "Text"
+          }
+        }
+      ]
+    },
+    "pipeline": [
+      {
+        "type": "transform",
+        "op": "uppercase",
+        "source": "input.text",
+        "target": "output"
+      }
+    ],
+    "seo": {
+      "title": {
+        "en": "AI Email Writer — Free Online Tool"
+      },
+      "description": {
+        "en": "Draft professional emails from a short brief."
+      },
+      "keywords": [
+        "ai email writer",
+        "ai email writer"
+      ]
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Is AI Email Writer free?"
+        },
+        "answer": {
+          "en": "Yes, free on ToolVerse AI."
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need to install anything?"
+        },
+        "answer": {
+          "en": "No, it runs in your browser."
+        }
+      }
+    ],
+    "howto": [
+      {
+        "en": "Open the tool page"
+      },
+      {
+        "en": "Enter your input"
+      },
+      {
+        "en": "Click Run and copy the result"
+      }
+    ],
+    "capabilities": [
+      "server"
+    ],
+    "is_viral": true,
+    "share_text": {
+      "en": "Try AI Email Writer free on ToolVerse AI"
+    }
+  },
+  {
+    "slug": "ai-product-description",
+    "category": "ai",
+    "name": {
+      "en": "AI Product Description"
+    },
+    "description": {
+      "en": "Write product descriptions from key features."
+    },
+    "recipe": "ai",
+    "ui_schema": {
+      "fields": [
+        {
+          "name": "text",
+          "type": "textarea",
+          "label": {
+            "en": "Text"
+          }
+        }
+      ]
+    },
+    "pipeline": [
+      {
+        "type": "transform",
+        "op": "uppercase",
+        "source": "input.text",
+        "target": "output"
+      }
+    ],
+    "seo": {
+      "title": {
+        "en": "AI Product Description — Free Online Tool"
+      },
+      "description": {
+        "en": "Write product descriptions from key features."
+      },
+      "keywords": [
+        "ai product description",
+        "ai product description"
+      ]
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Is AI Product Description free?"
+        },
+        "answer": {
+          "en": "Yes, free on ToolVerse AI."
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need to install anything?"
+        },
+        "answer": {
+          "en": "No, it runs in your browser."
+        }
+      }
+    ],
+    "howto": [
+      {
+        "en": "Open the tool page"
+      },
+      {
+        "en": "Enter your input"
+      },
+      {
+        "en": "Click Run and copy the result"
+      }
+    ],
+    "capabilities": [
+      "server"
+    ],
+    "is_viral": true,
+    "share_text": {
+      "en": "Try AI Product Description free on ToolVerse AI"
+    }
+  },
+  {
+    "slug": "ai-hashtag-generator",
+    "category": "ai",
+    "name": {
+      "en": "AI Hashtag Generator"
+    },
+    "description": {
+      "en": "Suggest relevant hashtags for social posts."
+    },
+    "recipe": "ai",
+    "ui_schema": {
+      "fields": [
+        {
+          "name": "text",
+          "type": "textarea",
+          "label": {
+            "en": "Text"
+          }
+        }
+      ]
+    },
+    "pipeline": [
+      {
+        "type": "transform",
+        "op": "uppercase",
+        "source": "input.text",
+        "target": "output"
+      }
+    ],
+    "seo": {
+      "title": {
+        "en": "AI Hashtag Generator — Free Online Tool"
+      },
+      "description": {
+        "en": "Suggest relevant hashtags for social posts."
+      },
+      "keywords": [
+        "ai hashtag generator",
+        "ai hashtag generator"
+      ]
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Is AI Hashtag Generator free?"
+        },
+        "answer": {
+          "en": "Yes, free on ToolVerse AI."
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need to install anything?"
+        },
+        "answer": {
+          "en": "No, it runs in your browser."
+        }
+      }
+    ],
+    "howto": [
+      {
+        "en": "Open the tool page"
+      },
+      {
+        "en": "Enter your input"
+      },
+      {
+        "en": "Click Run and copy the result"
+      }
+    ],
+    "capabilities": [
+      "server"
+    ],
+    "is_viral": true,
+    "share_text": {
+      "en": "Try AI Hashtag Generator free on ToolVerse AI"
+    }
+  },
+  {
+    "slug": "ai-translate-stub",
+    "category": "ai",
+    "name": {
+      "en": "AI Translate"
+    },
+    "description": {
+      "en": "Translate text between common languages."
+    },
+    "recipe": "ai",
+    "ui_schema": {
+      "fields": [
+        {
+          "name": "text",
+          "type": "textarea",
+          "label": {
+            "en": "Text"
+          }
+        }
+      ]
+    },
+    "pipeline": [
+      {
+        "type": "transform",
+        "op": "uppercase",
+        "source": "input.text",
+        "target": "output"
+      }
+    ],
+    "seo": {
+      "title": {
+        "en": "AI Translate — Free Online Tool"
+      },
+      "description": {
+        "en": "Translate text between common languages."
+      },
+      "keywords": [
+        "ai translate stub",
+        "ai translate"
+      ]
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Is AI Translate free?"
+        },
+        "answer": {
+          "en": "Yes, free on ToolVerse AI."
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need to install anything?"
+        },
+        "answer": {
+          "en": "No, it runs in your browser."
+        }
+      }
+    ],
+    "howto": [
+      {
+        "en": "Open the tool page"
+      },
+      {
+        "en": "Enter your input"
+      },
+      {
+        "en": "Click Run and copy the result"
+      }
+    ],
+    "capabilities": [
+      "server"
+    ],
+    "is_viral": true,
+    "share_text": {
+      "en": "Try AI Translate free on ToolVerse AI"
+    }
+  },
+  {
+    "slug": "ai-faq-builder",
+    "category": "ai",
+    "name": {
+      "en": "AI FAQ Builder"
+    },
+    "description": {
+      "en": "Generate FAQ pairs from product notes."
+    },
+    "recipe": "ai",
+    "ui_schema": {
+      "fields": [
+        {
+          "name": "text",
+          "type": "textarea",
+          "label": {
+            "en": "Text"
+          }
+        }
+      ]
+    },
+    "pipeline": [
+      {
+        "type": "transform",
+        "op": "uppercase",
+        "source": "input.text",
+        "target": "output"
+      }
+    ],
+    "seo": {
+      "title": {
+        "en": "AI FAQ Builder — Free Online Tool"
+      },
+      "description": {
+        "en": "Generate FAQ pairs from product notes."
+      },
+      "keywords": [
+        "ai faq builder",
+        "ai faq builder"
+      ]
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Is AI FAQ Builder free?"
+        },
+        "answer": {
+          "en": "Yes, free on ToolVerse AI."
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need to install anything?"
+        },
+        "answer": {
+          "en": "No, it runs in your browser."
+        }
+      }
+    ],
+    "howto": [
+      {
+        "en": "Open the tool page"
+      },
+      {
+        "en": "Enter your input"
+      },
+      {
+        "en": "Click Run and copy the result"
+      }
+    ],
+    "capabilities": [
+      "server"
+    ],
+    "is_viral": true,
+    "share_text": {
+      "en": "Try AI FAQ Builder free on ToolVerse AI"
+    }
+  },
+  {
+    "slug": "ai-meta-description",
+    "category": "ai",
+    "name": {
+      "en": "AI Meta Description"
+    },
+    "description": {
+      "en": "Write SEO meta descriptions under 160 chars."
+    },
+    "recipe": "ai",
+    "ui_schema": {
+      "fields": [
+        {
+          "name": "text",
+          "type": "textarea",
+          "label": {
+            "en": "Text"
+          }
+        }
+      ]
+    },
+    "pipeline": [
+      {
+        "type": "transform",
+        "op": "uppercase",
+        "source": "input.text",
+        "target": "output"
+      }
+    ],
+    "seo": {
+      "title": {
+        "en": "AI Meta Description — Free Online Tool"
+      },
+      "description": {
+        "en": "Write SEO meta descriptions under 160 chars."
+      },
+      "keywords": [
+        "ai meta description",
+        "ai meta description"
+      ]
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Is AI Meta Description free?"
+        },
+        "answer": {
+          "en": "Yes, free on ToolVerse AI."
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need to install anything?"
+        },
+        "answer": {
+          "en": "No, it runs in your browser."
+        }
+      }
+    ],
+    "howto": [
+      {
+        "en": "Open the tool page"
+      },
+      {
+        "en": "Enter your input"
+      },
+      {
+        "en": "Click Run and copy the result"
+      }
+    ],
+    "capabilities": [
+      "server"
+    ],
+    "is_viral": true,
+    "share_text": {
+      "en": "Try AI Meta Description free on ToolVerse AI"
+    }
+  },
+  {
+    "slug": "ai-outline-generator",
+    "category": "ai",
+    "name": {
+      "en": "AI Outline Generator"
+    },
+    "description": {
+      "en": "Create blog outlines from a keyword."
+    },
+    "recipe": "ai",
+    "ui_schema": {
+      "fields": [
+        {
+          "name": "text",
+          "type": "textarea",
+          "label": {
+            "en": "Text"
+          }
+        }
+      ]
+    },
+    "pipeline": [
+      {
+        "type": "transform",
+        "op": "uppercase",
+        "source": "input.text",
+        "target": "output"
+      }
+    ],
+    "seo": {
+      "title": {
+        "en": "AI Outline Generator — Free Online Tool"
+      },
+      "description": {
+        "en": "Create blog outlines from a keyword."
+      },
+      "keywords": [
+        "ai outline generator",
+        "ai outline generator"
+      ]
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Is AI Outline Generator free?"
+        },
+        "answer": {
+          "en": "Yes, free on ToolVerse AI."
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need to install anything?"
+        },
+        "answer": {
+          "en": "No, it runs in your browser."
+        }
+      }
+    ],
+    "howto": [
+      {
+        "en": "Open the tool page"
+      },
+      {
+        "en": "Enter your input"
+      },
+      {
+        "en": "Click Run and copy the result"
+      }
+    ],
+    "capabilities": [
+      "server"
+    ],
+    "is_viral": true,
+    "share_text": {
+      "en": "Try AI Outline Generator free on ToolVerse AI"
+    }
+  },
+  {
+    "slug": "css-minifier",
+    "category": "developer",
+    "name": {
+      "en": "CSS Minifier"
+    },
+    "description": {
+      "en": "Minify CSS by removing whitespace and comments."
+    },
+    "recipe": "developer",
+    "ui_schema": {
+      "fields": [
+        {
+          "name": "text",
+          "type": "textarea",
+          "label": {
+            "en": "Text"
+          }
+        }
+      ]
+    },
+    "pipeline": [
+      {
+        "type": "transform",
+        "op": "uppercase",
+        "source": "input.text",
+        "target": "output"
+      }
+    ],
+    "seo": {
+      "title": {
+        "en": "CSS Minifier — Free Online Tool"
+      },
+      "description": {
+        "en": "Minify CSS by removing whitespace and comments."
+      },
+      "keywords": [
+        "css minifier",
+        "css minifier"
+      ]
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Is CSS Minifier free?"
+        },
+        "answer": {
+          "en": "Yes, free on ToolVerse AI."
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need to install anything?"
+        },
+        "answer": {
+          "en": "No, it runs in your browser."
+        }
+      }
+    ],
+    "howto": [
+      {
+        "en": "Open the tool page"
+      },
+      {
+        "en": "Enter your input"
+      },
+      {
+        "en": "Click Run and copy the result"
+      }
+    ],
+    "capabilities": [
+      "server"
+    ],
+    "is_viral": false,
+    "share_text": {}
+  },
+  {
+    "slug": "html-minifier",
+    "category": "developer",
+    "name": {
+      "en": "HTML Minifier"
+    },
+    "description": {
+      "en": "Minify HTML for faster page loads."
+    },
+    "recipe": "developer",
+    "ui_schema": {
+      "fields": [
+        {
+          "name": "text",
+          "type": "textarea",
+          "label": {
+            "en": "Text"
+          }
+        }
+      ]
+    },
+    "pipeline": [
+      {
+        "type": "transform",
+        "op": "uppercase",
+        "source": "input.text",
+        "target": "output"
+      }
+    ],
+    "seo": {
+      "title": {
+        "en": "HTML Minifier — Free Online Tool"
+      },
+      "description": {
+        "en": "Minify HTML for faster page loads."
+      },
+      "keywords": [
+        "html minifier",
+        "html minifier"
+      ]
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Is HTML Minifier free?"
+        },
+        "answer": {
+          "en": "Yes, free on ToolVerse AI."
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need to install anything?"
+        },
+        "answer": {
+          "en": "No, it runs in your browser."
+        }
+      }
+    ],
+    "howto": [
+      {
+        "en": "Open the tool page"
+      },
+      {
+        "en": "Enter your input"
+      },
+      {
+        "en": "Click Run and copy the result"
+      }
+    ],
+    "capabilities": [
+      "server"
+    ],
+    "is_viral": false,
+    "share_text": {}
+  },
+  {
+    "slug": "js-minifier",
+    "category": "developer",
+    "name": {
+      "en": "JS Minifier"
+    },
+    "description": {
+      "en": "Minify JavaScript source for production."
+    },
+    "recipe": "developer",
+    "ui_schema": {
+      "fields": [
+        {
+          "name": "text",
+          "type": "textarea",
+          "label": {
+            "en": "Text"
+          }
+        }
+      ]
+    },
+    "pipeline": [
+      {
+        "type": "transform",
+        "op": "uppercase",
+        "source": "input.text",
+        "target": "output"
+      }
+    ],
+    "seo": {
+      "title": {
+        "en": "JS Minifier — Free Online Tool"
+      },
+      "description": {
+        "en": "Minify JavaScript source for production."
+      },
+      "keywords": [
+        "js minifier",
+        "js minifier"
+      ]
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Is JS Minifier free?"
+        },
+        "answer": {
+          "en": "Yes, free on ToolVerse AI."
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need to install anything?"
+        },
+        "answer": {
+          "en": "No, it runs in your browser."
+        }
+      }
+    ],
+    "howto": [
+      {
+        "en": "Open the tool page"
+      },
+      {
+        "en": "Enter your input"
+      },
+      {
+        "en": "Click Run and copy the result"
+      }
+    ],
+    "capabilities": [
+      "server"
+    ],
+    "is_viral": false,
+    "share_text": {}
+  },
+  {
+    "slug": "regex-tester",
+    "category": "developer",
+    "name": {
+      "en": "Regex Tester"
+    },
+    "description": {
+      "en": "Test regular expressions against sample text."
+    },
+    "recipe": "developer",
+    "ui_schema": {
+      "fields": [
+        {
+          "name": "text",
+          "type": "textarea",
+          "label": {
+            "en": "Text"
+          }
+        }
+      ]
+    },
+    "pipeline": [
+      {
+        "type": "transform",
+        "op": "uppercase",
+        "source": "input.text",
+        "target": "output"
+      }
+    ],
+    "seo": {
+      "title": {
+        "en": "Regex Tester — Free Online Tool"
+      },
+      "description": {
+        "en": "Test regular expressions against sample text."
+      },
+      "keywords": [
+        "regex tester",
+        "regex tester"
+      ]
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Is Regex Tester free?"
+        },
+        "answer": {
+          "en": "Yes, free on ToolVerse AI."
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need to install anything?"
+        },
+        "answer": {
+          "en": "No, it runs in your browser."
+        }
+      }
+    ],
+    "howto": [
+      {
+        "en": "Open the tool page"
+      },
+      {
+        "en": "Enter your input"
+      },
+      {
+        "en": "Click Run and copy the result"
+      }
+    ],
+    "capabilities": [
+      "server"
+    ],
+    "is_viral": false,
+    "share_text": {}
+  },
+  {
+    "slug": "cron-explainer",
+    "category": "developer",
+    "name": {
+      "en": "Cron Explainer"
+    },
+    "description": {
+      "en": "Explain cron expressions in plain English."
+    },
+    "recipe": "developer",
+    "ui_schema": {
+      "fields": [
+        {
+          "name": "text",
+          "type": "textarea",
+          "label": {
+            "en": "Text"
+          }
+        }
+      ]
+    },
+    "pipeline": [
+      {
+        "type": "transform",
+        "op": "uppercase",
+        "source": "input.text",
+        "target": "output"
+      }
+    ],
+    "seo": {
+      "title": {
+        "en": "Cron Explainer — Free Online Tool"
+      },
+      "description": {
+        "en": "Explain cron expressions in plain English."
+      },
+      "keywords": [
+        "cron explainer",
+        "cron explainer"
+      ]
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Is Cron Explainer free?"
+        },
+        "answer": {
+          "en": "Yes, free on ToolVerse AI."
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need to install anything?"
+        },
+        "answer": {
+          "en": "No, it runs in your browser."
+        }
+      }
+    ],
+    "howto": [
+      {
+        "en": "Open the tool page"
+      },
+      {
+        "en": "Enter your input"
+      },
+      {
+        "en": "Click Run and copy the result"
+      }
+    ],
+    "capabilities": [
+      "server"
+    ],
+    "is_viral": false,
+    "share_text": {}
+  },
+  {
+    "slug": "json-to-yaml",
+    "category": "developer",
+    "name": {
+      "en": "JSON to YAML"
+    },
+    "description": {
+      "en": "Convert JSON documents to YAML."
+    },
+    "recipe": "developer",
+    "ui_schema": {
+      "fields": [
+        {
+          "name": "text",
+          "type": "textarea",
+          "label": {
+            "en": "Text"
+          }
+        }
+      ]
+    },
+    "pipeline": [
+      {
+        "type": "transform",
+        "op": "uppercase",
+        "source": "input.text",
+        "target": "output"
+      }
+    ],
+    "seo": {
+      "title": {
+        "en": "JSON to YAML — Free Online Tool"
+      },
+      "description": {
+        "en": "Convert JSON documents to YAML."
+      },
+      "keywords": [
+        "json to yaml",
+        "json to yaml"
+      ]
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Is JSON to YAML free?"
+        },
+        "answer": {
+          "en": "Yes, free on ToolVerse AI."
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need to install anything?"
+        },
+        "answer": {
+          "en": "No, it runs in your browser."
+        }
+      }
+    ],
+    "howto": [
+      {
+        "en": "Open the tool page"
+      },
+      {
+        "en": "Enter your input"
+      },
+      {
+        "en": "Click Run and copy the result"
+      }
+    ],
+    "capabilities": [
+      "server"
+    ],
+    "is_viral": false,
+    "share_text": {}
+  },
+  {
+    "slug": "yaml-to-json",
+    "category": "developer",
+    "name": {
+      "en": "YAML to JSON"
+    },
+    "description": {
+      "en": "Convert YAML documents to JSON."
+    },
+    "recipe": "developer",
+    "ui_schema": {
+      "fields": [
+        {
+          "name": "text",
+          "type": "textarea",
+          "label": {
+            "en": "Text"
+          }
+        }
+      ]
+    },
+    "pipeline": [
+      {
+        "type": "transform",
+        "op": "uppercase",
+        "source": "input.text",
+        "target": "output"
+      }
+    ],
+    "seo": {
+      "title": {
+        "en": "YAML to JSON — Free Online Tool"
+      },
+      "description": {
+        "en": "Convert YAML documents to JSON."
+      },
+      "keywords": [
+        "yaml to json",
+        "yaml to json"
+      ]
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Is YAML to JSON free?"
+        },
+        "answer": {
+          "en": "Yes, free on ToolVerse AI."
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need to install anything?"
+        },
+        "answer": {
+          "en": "No, it runs in your browser."
+        }
+      }
+    ],
+    "howto": [
+      {
+        "en": "Open the tool page"
+      },
+      {
+        "en": "Enter your input"
+      },
+      {
+        "en": "Click Run and copy the result"
+      }
+    ],
+    "capabilities": [
+      "server"
+    ],
+    "is_viral": false,
+    "share_text": {}
+  },
+  {
+    "slug": "query-string-parser",
+    "category": "developer",
+    "name": {
+      "en": "Query String Parser"
+    },
+    "description": {
+      "en": "Parse and stringify URL query parameters."
+    },
+    "recipe": "developer",
+    "ui_schema": {
+      "fields": [
+        {
+          "name": "text",
+          "type": "textarea",
+          "label": {
+            "en": "Text"
+          }
+        }
+      ]
+    },
+    "pipeline": [
+      {
+        "type": "transform",
+        "op": "uppercase",
+        "source": "input.text",
+        "target": "output"
+      }
+    ],
+    "seo": {
+      "title": {
+        "en": "Query String Parser — Free Online Tool"
+      },
+      "description": {
+        "en": "Parse and stringify URL query parameters."
+      },
+      "keywords": [
+        "query string parser",
+        "query string parser"
+      ]
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Is Query String Parser free?"
+        },
+        "answer": {
+          "en": "Yes, free on ToolVerse AI."
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need to install anything?"
+        },
+        "answer": {
+          "en": "No, it runs in your browser."
+        }
+      }
+    ],
+    "howto": [
+      {
+        "en": "Open the tool page"
+      },
+      {
+        "en": "Enter your input"
+      },
+      {
+        "en": "Click Run and copy the result"
+      }
+    ],
+    "capabilities": [
+      "server"
+    ],
+    "is_viral": false,
+    "share_text": {}
+  },
+  {
+    "slug": "http-status-lookup",
+    "category": "developer",
+    "name": {
+      "en": "HTTP Status Lookup"
+    },
+    "description": {
+      "en": "Look up HTTP status code meanings."
+    },
+    "recipe": "developer",
+    "ui_schema": {
+      "fields": [
+        {
+          "name": "text",
+          "type": "textarea",
+          "label": {
+            "en": "Text"
+          }
+        }
+      ]
+    },
+    "pipeline": [
+      {
+        "type": "transform",
+        "op": "uppercase",
+        "source": "input.text",
+        "target": "output"
+      }
+    ],
+    "seo": {
+      "title": {
+        "en": "HTTP Status Lookup — Free Online Tool"
+      },
+      "description": {
+        "en": "Look up HTTP status code meanings."
+      },
+      "keywords": [
+        "http status lookup",
+        "http status lookup"
+      ]
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Is HTTP Status Lookup free?"
+        },
+        "answer": {
+          "en": "Yes, free on ToolVerse AI."
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need to install anything?"
+        },
+        "answer": {
+          "en": "No, it runs in your browser."
+        }
+      }
+    ],
+    "howto": [
+      {
+        "en": "Open the tool page"
+      },
+      {
+        "en": "Enter your input"
+      },
+      {
+        "en": "Click Run and copy the result"
+      }
+    ],
+    "capabilities": [
+      "server"
+    ],
+    "is_viral": false,
+    "share_text": {}
+  },
+  {
+    "slug": "user-agent-parser",
+    "category": "developer",
+    "name": {
+      "en": "User Agent Parser"
+    },
+    "description": {
+      "en": "Parse browser user-agent strings."
+    },
+    "recipe": "developer",
+    "ui_schema": {
+      "fields": [
+        {
+          "name": "text",
+          "type": "textarea",
+          "label": {
+            "en": "Text"
+          }
+        }
+      ]
+    },
+    "pipeline": [
+      {
+        "type": "transform",
+        "op": "uppercase",
+        "source": "input.text",
+        "target": "output"
+      }
+    ],
+    "seo": {
+      "title": {
+        "en": "User Agent Parser — Free Online Tool"
+      },
+      "description": {
+        "en": "Parse browser user-agent strings."
+      },
+      "keywords": [
+        "user agent parser",
+        "user agent parser"
+      ]
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Is User Agent Parser free?"
+        },
+        "answer": {
+          "en": "Yes, free on ToolVerse AI."
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need to install anything?"
+        },
+        "answer": {
+          "en": "No, it runs in your browser."
+        }
+      }
+    ],
+    "howto": [
+      {
+        "en": "Open the tool page"
+      },
+      {
+        "en": "Enter your input"
+      },
+      {
+        "en": "Click Run and copy the result"
+      }
+    ],
+    "capabilities": [
+      "server"
+    ],
+    "is_viral": false,
+    "share_text": {}
+  },
+  {
+    "slug": "percentage-calculator",
+    "category": "calculators",
+    "name": {
+      "en": "Percentage Calculator"
+    },
+    "description": {
+      "en": "Calculate percentages, increases, and decreases."
+    },
+    "recipe": "calculator",
+    "ui_schema": {
+      "fields": [
+        {
+          "name": "a",
+          "type": "number",
+          "label": {
+            "en": "Value A"
+          },
+          "default": 100
+        },
+        {
+          "name": "b",
+          "type": "number",
+          "label": {
+            "en": "Value B"
+          },
+          "default": 10
+        }
+      ]
+    },
+    "pipeline": [
+      {
+        "type": "template",
+        "template": "Result: {{ input.a }} / {{ input.b }}",
+        "target": "output"
+      }
+    ],
+    "seo": {
+      "title": {
+        "en": "Percentage Calculator — Free Online Tool"
+      },
+      "description": {
+        "en": "Calculate percentages, increases, and decreases."
+      },
+      "keywords": [
+        "percentage calculator",
+        "percentage calculator"
+      ]
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Is Percentage Calculator free?"
+        },
+        "answer": {
+          "en": "Yes, free on ToolVerse AI."
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need to install anything?"
+        },
+        "answer": {
+          "en": "No, it runs in your browser."
+        }
+      }
+    ],
+    "howto": [
+      {
+        "en": "Open the tool page"
+      },
+      {
+        "en": "Enter your input"
+      },
+      {
+        "en": "Click Run and copy the result"
+      }
+    ],
+    "capabilities": [
+      "server"
+    ],
+    "is_viral": false,
+    "share_text": {}
+  },
+  {
+    "slug": "bmi-calculator",
+    "category": "calculators",
+    "name": {
+      "en": "BMI Calculator"
+    },
+    "description": {
+      "en": "Calculate body mass index from height and weight."
+    },
+    "recipe": "calculator",
+    "ui_schema": {
+      "fields": [
+        {
+          "name": "a",
+          "type": "number",
+          "label": {
+            "en": "Value A"
+          },
+          "default": 100
+        },
+        {
+          "name": "b",
+          "type": "number",
+          "label": {
+            "en": "Value B"
+          },
+          "default": 10
+        }
+      ]
+    },
+    "pipeline": [
+      {
+        "type": "template",
+        "template": "Result: {{ input.a }} / {{ input.b }}",
+        "target": "output"
+      }
+    ],
+    "seo": {
+      "title": {
+        "en": "BMI Calculator — Free Online Tool"
+      },
+      "description": {
+        "en": "Calculate body mass index from height and weight."
+      },
+      "keywords": [
+        "bmi calculator",
+        "bmi calculator"
+      ]
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Is BMI Calculator free?"
+        },
+        "answer": {
+          "en": "Yes, free on ToolVerse AI."
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need to install anything?"
+        },
+        "answer": {
+          "en": "No, it runs in your browser."
+        }
+      }
+    ],
+    "howto": [
+      {
+        "en": "Open the tool page"
+      },
+      {
+        "en": "Enter your input"
+      },
+      {
+        "en": "Click Run and copy the result"
+      }
+    ],
+    "capabilities": [
+      "server"
+    ],
+    "is_viral": false,
+    "share_text": {}
+  },
+  {
+    "slug": "loan-emi-calculator",
+    "category": "calculators",
+    "name": {
+      "en": "Loan EMI Calculator"
+    },
+    "description": {
+      "en": "Estimate monthly EMI for loans."
+    },
+    "recipe": "calculator",
+    "ui_schema": {
+      "fields": [
+        {
+          "name": "a",
+          "type": "number",
+          "label": {
+            "en": "Value A"
+          },
+          "default": 100
+        },
+        {
+          "name": "b",
+          "type": "number",
+          "label": {
+            "en": "Value B"
+          },
+          "default": 10
+        }
+      ]
+    },
+    "pipeline": [
+      {
+        "type": "template",
+        "template": "Result: {{ input.a }} / {{ input.b }}",
+        "target": "output"
+      }
+    ],
+    "seo": {
+      "title": {
+        "en": "Loan EMI Calculator — Free Online Tool"
+      },
+      "description": {
+        "en": "Estimate monthly EMI for loans."
+      },
+      "keywords": [
+        "loan emi calculator",
+        "loan emi calculator"
+      ]
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Is Loan EMI Calculator free?"
+        },
+        "answer": {
+          "en": "Yes, free on ToolVerse AI."
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need to install anything?"
+        },
+        "answer": {
+          "en": "No, it runs in your browser."
+        }
+      }
+    ],
+    "howto": [
+      {
+        "en": "Open the tool page"
+      },
+      {
+        "en": "Enter your input"
+      },
+      {
+        "en": "Click Run and copy the result"
+      }
+    ],
+    "capabilities": [
+      "server"
+    ],
+    "is_viral": false,
+    "share_text": {}
+  },
+  {
+    "slug": "tip-calculator",
+    "category": "calculators",
+    "name": {
+      "en": "Tip Calculator"
+    },
+    "description": {
+      "en": "Split tips and bills among friends."
+    },
+    "recipe": "calculator",
+    "ui_schema": {
+      "fields": [
+        {
+          "name": "a",
+          "type": "number",
+          "label": {
+            "en": "Value A"
+          },
+          "default": 100
+        },
+        {
+          "name": "b",
+          "type": "number",
+          "label": {
+            "en": "Value B"
+          },
+          "default": 10
+        }
+      ]
+    },
+    "pipeline": [
+      {
+        "type": "template",
+        "template": "Result: {{ input.a }} / {{ input.b }}",
+        "target": "output"
+      }
+    ],
+    "seo": {
+      "title": {
+        "en": "Tip Calculator — Free Online Tool"
+      },
+      "description": {
+        "en": "Split tips and bills among friends."
+      },
+      "keywords": [
+        "tip calculator",
+        "tip calculator"
+      ]
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Is Tip Calculator free?"
+        },
+        "answer": {
+          "en": "Yes, free on ToolVerse AI."
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need to install anything?"
+        },
+        "answer": {
+          "en": "No, it runs in your browser."
+        }
+      }
+    ],
+    "howto": [
+      {
+        "en": "Open the tool page"
+      },
+      {
+        "en": "Enter your input"
+      },
+      {
+        "en": "Click Run and copy the result"
+      }
+    ],
+    "capabilities": [
+      "server"
+    ],
+    "is_viral": false,
+    "share_text": {}
+  },
+  {
+    "slug": "discount-calculator",
+    "category": "calculators",
+    "name": {
+      "en": "Discount Calculator"
+    },
+    "description": {
+      "en": "Compute sale prices after discounts."
+    },
+    "recipe": "calculator",
+    "ui_schema": {
+      "fields": [
+        {
+          "name": "a",
+          "type": "number",
+          "label": {
+            "en": "Value A"
+          },
+          "default": 100
+        },
+        {
+          "name": "b",
+          "type": "number",
+          "label": {
+            "en": "Value B"
+          },
+          "default": 10
+        }
+      ]
+    },
+    "pipeline": [
+      {
+        "type": "template",
+        "template": "Result: {{ input.a }} / {{ input.b }}",
+        "target": "output"
+      }
+    ],
+    "seo": {
+      "title": {
+        "en": "Discount Calculator — Free Online Tool"
+      },
+      "description": {
+        "en": "Compute sale prices after discounts."
+      },
+      "keywords": [
+        "discount calculator",
+        "discount calculator"
+      ]
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Is Discount Calculator free?"
+        },
+        "answer": {
+          "en": "Yes, free on ToolVerse AI."
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need to install anything?"
+        },
+        "answer": {
+          "en": "No, it runs in your browser."
+        }
+      }
+    ],
+    "howto": [
+      {
+        "en": "Open the tool page"
+      },
+      {
+        "en": "Enter your input"
+      },
+      {
+        "en": "Click Run and copy the result"
+      }
+    ],
+    "capabilities": [
+      "server"
+    ],
+    "is_viral": false,
+    "share_text": {}
+  },
+  {
+    "slug": "age-calculator",
+    "category": "calculators",
+    "name": {
+      "en": "Age Calculator"
+    },
+    "description": {
+      "en": "Calculate exact age from a birth date."
+    },
+    "recipe": "calculator",
+    "ui_schema": {
+      "fields": [
+        {
+          "name": "a",
+          "type": "number",
+          "label": {
+            "en": "Value A"
+          },
+          "default": 100
+        },
+        {
+          "name": "b",
+          "type": "number",
+          "label": {
+            "en": "Value B"
+          },
+          "default": 10
+        }
+      ]
+    },
+    "pipeline": [
+      {
+        "type": "template",
+        "template": "Result: {{ input.a }} / {{ input.b }}",
+        "target": "output"
+      }
+    ],
+    "seo": {
+      "title": {
+        "en": "Age Calculator — Free Online Tool"
+      },
+      "description": {
+        "en": "Calculate exact age from a birth date."
+      },
+      "keywords": [
+        "age calculator",
+        "age calculator"
+      ]
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Is Age Calculator free?"
+        },
+        "answer": {
+          "en": "Yes, free on ToolVerse AI."
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need to install anything?"
+        },
+        "answer": {
+          "en": "No, it runs in your browser."
+        }
+      }
+    ],
+    "howto": [
+      {
+        "en": "Open the tool page"
+      },
+      {
+        "en": "Enter your input"
+      },
+      {
+        "en": "Click Run and copy the result"
+      }
+    ],
+    "capabilities": [
+      "server"
+    ],
+    "is_viral": false,
+    "share_text": {}
+  },
+  {
+    "slug": "gpa-calculator",
+    "category": "calculators",
+    "name": {
+      "en": "GPA Calculator"
+    },
+    "description": {
+      "en": "Calculate GPA from course grades."
+    },
+    "recipe": "calculator",
+    "ui_schema": {
+      "fields": [
+        {
+          "name": "a",
+          "type": "number",
+          "label": {
+            "en": "Value A"
+          },
+          "default": 100
+        },
+        {
+          "name": "b",
+          "type": "number",
+          "label": {
+            "en": "Value B"
+          },
+          "default": 10
+        }
+      ]
+    },
+    "pipeline": [
+      {
+        "type": "template",
+        "template": "Result: {{ input.a }} / {{ input.b }}",
+        "target": "output"
+      }
+    ],
+    "seo": {
+      "title": {
+        "en": "GPA Calculator — Free Online Tool"
+      },
+      "description": {
+        "en": "Calculate GPA from course grades."
+      },
+      "keywords": [
+        "gpa calculator",
+        "gpa calculator"
+      ]
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Is GPA Calculator free?"
+        },
+        "answer": {
+          "en": "Yes, free on ToolVerse AI."
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need to install anything?"
+        },
+        "answer": {
+          "en": "No, it runs in your browser."
+        }
+      }
+    ],
+    "howto": [
+      {
+        "en": "Open the tool page"
+      },
+      {
+        "en": "Enter your input"
+      },
+      {
+        "en": "Click Run and copy the result"
+      }
+    ],
+    "capabilities": [
+      "server"
+    ],
+    "is_viral": false,
+    "share_text": {}
+  },
+  {
+    "slug": "currency-stub",
+    "category": "calculators",
+    "name": {
+      "en": "Currency Converter Stub"
+    },
+    "description": {
+      "en": "Convert amounts between currencies (rates stub)."
+    },
+    "recipe": "calculator",
+    "ui_schema": {
+      "fields": [
+        {
+          "name": "a",
+          "type": "number",
+          "label": {
+            "en": "Value A"
+          },
+          "default": 100
+        },
+        {
+          "name": "b",
+          "type": "number",
+          "label": {
+            "en": "Value B"
+          },
+          "default": 10
+        }
+      ]
+    },
+    "pipeline": [
+      {
+        "type": "template",
+        "template": "Result: {{ input.a }} / {{ input.b }}",
+        "target": "output"
+      }
+    ],
+    "seo": {
+      "title": {
+        "en": "Currency Converter Stub — Free Online Tool"
+      },
+      "description": {
+        "en": "Convert amounts between currencies (rates stub)."
+      },
+      "keywords": [
+        "currency stub",
+        "currency converter stub"
+      ]
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Is Currency Converter Stub free?"
+        },
+        "answer": {
+          "en": "Yes, free on ToolVerse AI."
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need to install anything?"
+        },
+        "answer": {
+          "en": "No, it runs in your browser."
+        }
+      }
+    ],
+    "howto": [
+      {
+        "en": "Open the tool page"
+      },
+      {
+        "en": "Enter your input"
+      },
+      {
+        "en": "Click Run and copy the result"
+      }
+    ],
+    "capabilities": [
+      "server"
+    ],
+    "is_viral": false,
+    "share_text": {}
+  },
+  {
+    "slug": "unit-length-converter",
+    "category": "calculators",
+    "name": {
+      "en": "Length Converter"
+    },
+    "description": {
+      "en": "Convert between meters, feet, inches, and more."
+    },
+    "recipe": "calculator",
+    "ui_schema": {
+      "fields": [
+        {
+          "name": "a",
+          "type": "number",
+          "label": {
+            "en": "Value A"
+          },
+          "default": 100
+        },
+        {
+          "name": "b",
+          "type": "number",
+          "label": {
+            "en": "Value B"
+          },
+          "default": 10
+        }
+      ]
+    },
+    "pipeline": [
+      {
+        "type": "template",
+        "template": "Result: {{ input.a }} / {{ input.b }}",
+        "target": "output"
+      }
+    ],
+    "seo": {
+      "title": {
+        "en": "Length Converter — Free Online Tool"
+      },
+      "description": {
+        "en": "Convert between meters, feet, inches, and more."
+      },
+      "keywords": [
+        "unit length converter",
+        "length converter"
+      ]
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Is Length Converter free?"
+        },
+        "answer": {
+          "en": "Yes, free on ToolVerse AI."
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need to install anything?"
+        },
+        "answer": {
+          "en": "No, it runs in your browser."
+        }
+      }
+    ],
+    "howto": [
+      {
+        "en": "Open the tool page"
+      },
+      {
+        "en": "Enter your input"
+      },
+      {
+        "en": "Click Run and copy the result"
+      }
+    ],
+    "capabilities": [
+      "server"
+    ],
+    "is_viral": false,
+    "share_text": {}
+  },
+  {
+    "slug": "compound-interest",
+    "category": "calculators",
+    "name": {
+      "en": "Compound Interest"
+    },
+    "description": {
+      "en": "Calculate compound interest growth over time."
+    },
+    "recipe": "calculator",
+    "ui_schema": {
+      "fields": [
+        {
+          "name": "a",
+          "type": "number",
+          "label": {
+            "en": "Value A"
+          },
+          "default": 100
+        },
+        {
+          "name": "b",
+          "type": "number",
+          "label": {
+            "en": "Value B"
+          },
+          "default": 10
+        }
+      ]
+    },
+    "pipeline": [
+      {
+        "type": "template",
+        "template": "Result: {{ input.a }} / {{ input.b }}",
+        "target": "output"
+      }
+    ],
+    "seo": {
+      "title": {
+        "en": "Compound Interest — Free Online Tool"
+      },
+      "description": {
+        "en": "Calculate compound interest growth over time."
+      },
+      "keywords": [
+        "compound interest",
+        "compound interest"
+      ]
+    },
+    "faq": [
+      {
+        "question": {
+          "en": "Is Compound Interest free?"
+        },
+        "answer": {
+          "en": "Yes, free on ToolVerse AI."
+        }
+      },
+      {
+        "question": {
+          "en": "Do I need to install anything?"
+        },
+        "answer": {
+          "en": "No, it runs in your browser."
+        }
+      }
+    ],
+    "howto": [
+      {
+        "en": "Open the tool page"
+      },
+      {
+        "en": "Enter your input"
+      },
+      {
+        "en": "Click Run and copy the result"
+      }
+    ],
+    "capabilities": [
+      "server"
+    ],
+    "is_viral": false,
+    "share_text": {}
+  }
+]

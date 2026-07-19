@@ -1,0 +1,63 @@
+{
+  "generic": {
+    "ui_schema": {
+      "fields": [
+        { "name": "text", "type": "textarea", "label": { "en": "Input" } }
+      ]
+    },
+    "pipeline": [
+      { "type": "transform", "op": "uppercase", "source": "input.text", "target": "output" }
+    ]
+  },
+  "pdf": {
+    "ui_schema": {
+      "fields": [
+        { "name": "notes", "type": "textarea", "label": { "en": "Job notes" } }
+      ]
+    },
+    "pipeline": [
+      { "type": "template", "template": "PDF job: {{ input.notes }}", "target": "output" }
+    ]
+  },
+  "image": {
+    "ui_schema": {
+      "fields": [
+        { "name": "url", "type": "text", "label": { "en": "Image URL" } }
+      ]
+    },
+    "pipeline": [
+      { "type": "template", "template": "Image processed: {{ input.url }}", "target": "output" }
+    ]
+  },
+  "ai": {
+    "ui_schema": {
+      "fields": [
+        { "name": "text", "type": "textarea", "label": { "en": "Prompt / text" } }
+      ]
+    },
+    "pipeline": [
+      { "type": "template", "template": "{{ input.text }}", "target": "output" }
+    ]
+  },
+  "developer": {
+    "ui_schema": {
+      "fields": [
+        { "name": "text", "type": "textarea", "label": { "en": "Source" } }
+      ]
+    },
+    "pipeline": [
+      { "type": "transform", "op": "uppercase", "source": "input.text", "target": "output" }
+    ]
+  },
+  "calculator": {
+    "ui_schema": {
+      "fields": [
+        { "name": "a", "type": "number", "label": { "en": "Value A" }, "default": 0 },
+        { "name": "b", "type": "number", "label": { "en": "Value B" }, "default": 0 }
+      ]
+    },
+    "pipeline": [
+      { "type": "template", "template": "a={{ input.a }} b={{ input.b }}", "target": "output" }
+    ]
+  }
+}

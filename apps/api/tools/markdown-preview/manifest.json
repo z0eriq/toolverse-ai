@@ -1,0 +1,32 @@
+{
+  "id": "markdown-preview",
+  "slug": "markdown-preview",
+  "category": "text",
+  "name": {
+    "en": "Markdown Preview",
+    "ar": "معاينة Markdown"
+  },
+  "description": {
+    "en": "Render Markdown to sanitized HTML safely in the browser or via API.",
+    "ar": "حوّل Markdown إلى HTML مُعقَّم بأمان في المتصفح أو عبر الواجهة."
+  },
+  "version": "1.0.0",
+  "premium": false,
+  "adsenseSlot": "sidebar",
+  "seo": {
+    "title": {
+      "en": "Markdown to HTML Preview — ToolVerse AI",
+      "ar": "معاينة Markdown إلى HTML — ToolVerse AI"
+    },
+    "keywords": [
+      "markdown preview",
+      "markdown to html",
+      "md renderer",
+      "معاينة markdown"
+    ]
+  },
+  "schemaType": "WebApplication",
+  "capabilities": ["client", "server"],
+  "icon": "file-code",
+  "order": 8
+}

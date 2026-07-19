@@ -1,0 +1,146 @@
+{
+  "capacity": 1000,
+  "categories": {
+    "pdf": {
+      "recipe": "pdf",
+      "category_slug": "pdf",
+      "templates": [
+        {
+          "slug_pattern": "pdf-{action}",
+          "name_pattern": "PDF {Action}",
+          "description_pattern": "Free online PDF {action} tool — no signup required.",
+          "actions": [
+            "merge", "split", "compress", "rotate", "unlock", "protect", "watermark",
+            "to-word", "to-excel", "to-jpg", "to-png", "extract-images", "extract-text",
+            "reorder", "crop", "ocr", "sign", "annotate", "flatten", "page-numbers",
+            "headers", "footers", "redact", "compare", "repair", "organize", "bookmark",
+            "metadata", "optimize", "grayscale", "invert", "deskew", "form-fill",
+            "form-extract", "to-html", "to-markdown", "to-csv", "to-json", "batch-compress",
+            "batch-merge", "batch-split", "page-delete", "page-extract", "page-insert",
+            "n-up", "booklet", "poster", "stamp", "background", "border", "resize-pages"
+          ]
+        }
+      ]
+    },
+    "image": {
+      "recipe": "image",
+      "category_slug": "images",
+      "templates": [
+        {
+          "slug_pattern": "image-{action}",
+          "name_pattern": "Image {Action}",
+          "description_pattern": "Free online image {action} tool — fast and private.",
+          "actions": [
+            "compress", "resize", "crop", "rotate", "flip", "convert", "to-jpg", "to-png",
+            "to-webp", "to-avif", "to-svg", "to-ico", "remove-bg", "upscale", "enhance",
+            "blur", "sharpen", "grayscale", "sepia", "invert", "watermark", "meme",
+            "collage", "sprite", "favicon", "exif-strip", "exif-view", "color-palette",
+            "dominant-color", "pixelate", "cartoon", "sketch", "oil-paint", "border",
+            "round-corners", "shadow", "opacity", "brightness", "contrast", "saturation",
+            "hue-shift", "batch-resize", "batch-convert", "gif-split", "gif-create",
+            "heic-to-jpg", "raw-preview", "svg-optimize", "png-quantize"
+          ]
+        }
+      ]
+    },
+    "ai": {
+      "recipe": "ai",
+      "category_slug": "ai",
+      "templates": [
+        {
+          "slug_pattern": "ai-{action}",
+          "name_pattern": "AI {Action}",
+          "description_pattern": "AI-powered {action} — free online assistant for creators.",
+          "actions": [
+            "summarizer", "rewriter", "paraphraser", "grammar-fix", "tone-changer",
+            "headline-generator", "meta-description", "blog-outline", "email-writer",
+            "product-description", "social-caption", "hashtag-generator", "keyword-ideas",
+            "faq-generator", "translate", "detect-language", "code-explain", "code-review",
+            "regex-helper", "sql-helper", "json-fix", "prompt-improver", "chat-title",
+            "meeting-notes", "action-items", "swot", "persona", "job-description",
+            "cover-letter", "resume-bullet", "interview-questions", "quiz-generator",
+            "flashcards", "lesson-plan", "recipe-ideas", "name-generator", "slogan",
+            "tagline", "ad-copy", "press-release", "bio-writer", "about-us",
+            "privacy-policy-draft", "terms-draft", "changelog", "release-notes",
+            "commit-message", "pr-description", "test-cases", "user-stories"
+          ]
+        }
+      ]
+    },
+    "calculators": {
+      "recipe": "calculator",
+      "category_slug": "calculators",
+      "templates": [
+        {
+          "slug_pattern": "{action}-calculator",
+          "name_pattern": "{Action} Calculator",
+          "description_pattern": "Free {action} calculator — instant results, no signup.",
+          "actions": [
+            "percentage", "loan", "mortgage", "compound-interest", "simple-interest",
+            "bmi", "calorie", "tip", "discount", "vat", "sales-tax", "salary",
+            "hourly-rate", "roi", "cagr", "break-even", "margin", "markup",
+            "currency", "unit-converter", "age", "date-difference", "time-zone",
+            "gpa", "grade", "fuel-cost", "electricity", "carbon-footprint",
+            "pregnancy", "ovulation", "pace", "split-bill", "savings-goal",
+            "retirement", "inflation", "amortization", "lease", "apr",
+            "payback", "npv", "irr", "debt-payoff", "emergency-fund",
+            "budget-split", "ratio", "proportion", "area", "volume", "density",
+            "speed", "power", "ohms-law", "resistor", "binary", "hex"
+          ]
+        }
+      ]
+    },
+    "developer": {
+      "recipe": "developer",
+      "category_slug": "developer",
+      "templates": [
+        {
+          "slug_pattern": "{action}",
+          "name_pattern": "{Action}",
+          "description_pattern": "Developer utility: {action} — free online tool.",
+          "actions": [
+            "json-formatter", "json-validator", "json-to-csv", "csv-to-json", "yaml-to-json",
+            "xml-formatter", "html-formatter", "css-minifier", "js-minifier", "sql-formatter",
+            "base64-encode", "base64-decode", "url-encode", "url-decode", "jwt-decode",
+            "uuid-generator", "nanoid-generator", "hash-md5", "hash-sha256", "hash-sha512",
+            "hmac-generator", "bcrypt-hash", "password-generator", "lorem-ipsum", "cron-parser",
+            "regex-tester", "diff-checker", "markdown-preview", "html-to-markdown",
+            "timestamp-converter", "color-converter", "rgb-to-hex", "favicon-generator",
+            "robots-txt", "sitemap-generator", "htaccess-generator", "dns-lookup",
+            "ip-lookup", "user-agent-parser", "mime-lookup", "slugify", "case-converter",
+            "whitespace-remover", "line-counter", "byte-counter", "qr-code", "barcode",
+            "graphql-formatter", "protobuf-json", "openapi-preview", "env-parser",
+            "dockerfile-lint", "gitignore-generator", "semver-compare", "chmod-calculator"
+          ]
+        }
+      ]
+    },
+    "business": {
+      "recipe": "generic",
+      "category_slug": "business",
+      "templates": [
+        {
+          "slug_pattern": "business-{action}",
+          "name_pattern": "Business {Action}",
+          "description_pattern": "Business tool: {action} — free for teams and freelancers.",
+          "actions": [
+            "invoice-generator", "quote-generator", "receipt-maker", "timesheet",
+            "expense-tracker", "meeting-agenda", "swot-template", "pitch-outline",
+            "okrs-template", "kpi-dashboard", "org-chart", "raci-matrix",
+            "project-charter", "risk-register", "stakeholder-map", "competitive-matrix",
+            "pricing-table", "proposal-outline", "nda-checklist", "contract-checklist",
+            "onboarding-checklist", "offboarding-checklist", "sop-template",
+            "job-scorecard", "interview-scorecard", "performance-review",
+            "customer-persona", "journey-map", "nps-calculator", "churn-estimator",
+            "ltv-calculator", "cac-calculator", "pipeline-stages", "crm-fields",
+            "email-sequence", "cold-email", "linkedin-outreach", "press-kit",
+            "brand-guidelines", "style-guide", "content-calendar", "editorial-brief",
+            "social-audit", "seo-brief", "competitor-teardown", "market-sizing",
+            "unit-economics", "fundraising-checklist", "cap-table-simple",
+            "equity-split", "partner-agreement-outline", "vendor-scorecard"
+          ]
+        }
+      ]
+    }
+  }
+}

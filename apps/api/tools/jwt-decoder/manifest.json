@@ -1,0 +1,32 @@
+{
+  "id": "jwt-decoder",
+  "slug": "jwt-decoder",
+  "category": "developer",
+  "name": {
+    "en": "JWT Decoder",
+    "ar": "فاك ترميز JWT"
+  },
+  "description": {
+    "en": "Decode JWT header and payload without verification. Secrets are never stored.",
+    "ar": "افك ترميز ترويسة وحمولة JWT دون تحقق. لا تُخزَّن الأسرار أبدًا."
+  },
+  "version": "1.0.0",
+  "premium": false,
+  "adsenseSlot": "sidebar",
+  "seo": {
+    "title": {
+      "en": "JWT Decoder (No Verification) — ToolVerse AI",
+      "ar": "فاك ترميز JWT (بدون تحقق) — ToolVerse AI"
+    },
+    "keywords": [
+      "jwt decoder",
+      "decode jwt",
+      "jwt payload",
+      "فاك jwt"
+    ]
+  },
+  "schemaType": "WebApplication",
+  "capabilities": ["client", "server"],
+  "icon": "key-round",
+  "order": 6
+}

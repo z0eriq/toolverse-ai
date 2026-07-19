@@ -1,0 +1,32 @@
+{
+  "id": "base64",
+  "slug": "base64",
+  "category": "developer",
+  "name": {
+    "en": "Base64 Encoder / Decoder",
+    "ar": "مُرمّز / فاك ترميز Base64"
+  },
+  "description": {
+    "en": "Encode text to Base64 or decode Base64 back to UTF-8 text.",
+    "ar": "حوّل النص إلى Base64 أو فك ترميز Base64 إلى نص UTF-8."
+  },
+  "version": "1.0.0",
+  "premium": false,
+  "adsenseSlot": "sidebar",
+  "seo": {
+    "title": {
+      "en": "Base64 Encode & Decode — ToolVerse AI",
+      "ar": "ترميز وفك Base64 — ToolVerse AI"
+    },
+    "keywords": [
+      "base64 encode",
+      "base64 decode",
+      "base64 converter",
+      "ترميز base64"
+    ]
+  },
+  "schemaType": "WebApplication",
+  "capabilities": ["client", "server"],
+  "icon": "binary",
+  "order": 2
+}

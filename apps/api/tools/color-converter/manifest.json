@@ -1,0 +1,33 @@
+{
+  "id": "color-converter",
+  "slug": "color-converter",
+  "category": "design",
+  "name": {
+    "en": "Color Converter",
+    "ar": "محوّل الألوان"
+  },
+  "description": {
+    "en": "Convert between HEX, RGB, and HSL, and calculate WCAG contrast ratios.",
+    "ar": "حوّل بين HEX وRGB وHSL واحسب نسبة التباين وفق WCAG."
+  },
+  "version": "1.0.0",
+  "premium": false,
+  "adsenseSlot": "sidebar",
+  "seo": {
+    "title": {
+      "en": "HEX / RGB / HSL Color Converter & Contrast — ToolVerse AI",
+      "ar": "محوّل ألوان HEX / RGB / HSL والتباين — ToolVerse AI"
+    },
+    "keywords": [
+      "color converter",
+      "hex to rgb",
+      "hsl converter",
+      "contrast ratio",
+      "محول الوان"
+    ]
+  },
+  "schemaType": "WebApplication",
+  "capabilities": ["client", "server"],
+  "icon": "palette",
+  "order": 10
+}

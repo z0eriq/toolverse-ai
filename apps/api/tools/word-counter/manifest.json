@@ -1,0 +1,32 @@
+{
+  "id": "word-counter",
+  "slug": "word-counter",
+  "category": "text",
+  "name": {
+    "en": "Word Counter",
+    "ar": "عدّاد الكلمات"
+  },
+  "description": {
+    "en": "Count words, characters, sentences, and estimate reading time.",
+    "ar": "احسب الكلمات والأحرف والجمل وقدّر وقت القراءة."
+  },
+  "version": "1.0.0",
+  "premium": false,
+  "adsenseSlot": "sidebar",
+  "seo": {
+    "title": {
+      "en": "Word & Character Counter — ToolVerse AI",
+      "ar": "عدّاد الكلمات والأحرف — ToolVerse AI"
+    },
+    "keywords": [
+      "word counter",
+      "character count",
+      "reading time",
+      "عداد كلمات"
+    ]
+  },
+  "schemaType": "WebApplication",
+  "capabilities": ["client", "server"],
+  "icon": "whole-word",
+  "order": 9
+}

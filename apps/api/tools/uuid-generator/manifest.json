@@ -1,0 +1,32 @@
+{
+  "id": "uuid-generator",
+  "slug": "uuid-generator",
+  "category": "developer",
+  "name": {
+    "en": "UUID Generator",
+    "ar": "مولّد UUID"
+  },
+  "description": {
+    "en": "Generate UUID v1, v4, or v5 identifiers in bulk.",
+    "ar": "أنشئ معرّفات UUID من الإصدارات v1 وv4 وv5 بالجملة."
+  },
+  "version": "1.0.0",
+  "premium": false,
+  "adsenseSlot": "sidebar",
+  "seo": {
+    "title": {
+      "en": "UUID Generator (v1 / v4 / v5) — ToolVerse AI",
+      "ar": "مولّد UUID (v1 / v4 / v5) — ToolVerse AI"
+    },
+    "keywords": [
+      "uuid generator",
+      "guid generator",
+      "uuid v4",
+      "مولد uuid"
+    ]
+  },
+  "schemaType": "WebApplication",
+  "capabilities": ["client", "server"],
+  "icon": "fingerprint",
+  "order": 3
+}

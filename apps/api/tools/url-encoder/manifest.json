@@ -1,0 +1,32 @@
+{
+  "id": "url-encoder",
+  "slug": "url-encoder",
+  "category": "developer",
+  "name": {
+    "en": "URL Encoder / Decoder",
+    "ar": "مُرمّز / فاك ترميز URL"
+  },
+  "description": {
+    "en": "Percent-encode or decode URL components and query strings.",
+    "ar": "رمّز أو فك ترميز مكوّنات الروابط وسلاسل الاستعلام."
+  },
+  "version": "1.0.0",
+  "premium": false,
+  "adsenseSlot": "sidebar",
+  "seo": {
+    "title": {
+      "en": "URL Encode & Decode — ToolVerse AI",
+      "ar": "ترميز وفك ترميز URL — ToolVerse AI"
+    },
+    "keywords": [
+      "url encode",
+      "url decode",
+      "percent encoding",
+      "ترميز رابط"
+    ]
+  },
+  "schemaType": "WebApplication",
+  "capabilities": ["client", "server"],
+  "icon": "link",
+  "order": 5
+}
