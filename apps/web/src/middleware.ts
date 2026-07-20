@@ -1,5 +1,5 @@
 import createIntlMiddleware from "next-intl/middleware";
-import { type NextRequest, NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { routing } from "./i18n/routing";
 import { LOCALE_CHOSEN_COOKIE } from "./i18n/locale-preference";
 import { updateSession } from "./utils/supabase/middleware";
