@@ -46,6 +46,7 @@
     "submitRegister": "Create account",
     "noAccount": "No account?",
     "hasAccount": "Already have an account?",
+    "confirmEmail": "Check your email to confirm your account, then sign in.",
     "errors": {
       "required": "This field is required",
       "email": "Enter a valid email",

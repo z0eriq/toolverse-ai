@@ -6,7 +6,10 @@ import { z } from "zod";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { useRouter, Link } from "@/i18n/navigation";
-import { useAuth } from "@/features/auth/auth-context";
+import {
+  AuthNeedsConfirmationError,
+  useAuth,
+} from "@/features/auth/auth-context";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -30,6 +33,7 @@ export function RegisterForm() {
   const { register: registerUser } = useAuth();
   const router = useRouter();
   const [error, setError] = useState<string | null>(null);
+  const [confirmHint, setConfirmHint] = useState<string | null>(null);
 
   const {
     register,
@@ -42,6 +46,7 @@ export function RegisterForm() {
 
   async function onSubmit(values: FormValues) {
     setError(null);
+    setConfirmHint(null);
     try {
       await registerUser({
         email: values.email,
@@ -49,7 +54,11 @@ export function RegisterForm() {
         password: values.password,
       });
       router.push("/dashboard");
-    } catch {
+    } catch (err) {
+      if (err instanceof AuthNeedsConfirmationError) {
+        setConfirmHint(t("confirmEmail"));
+        return;
+      }
       setError(t("errors.generic"));
     }
   }
@@ -102,6 +111,11 @@ export function RegisterForm() {
           </p>
         ) : null}
       </div>
+      {confirmHint ? (
+        <p className="text-sm text-[var(--muted)]" role="status">
+          {confirmHint}
+        </p>
+      ) : null}
       {error ? (
         <p className="text-sm text-[var(--color-danger)]" role="alert">
           {error}

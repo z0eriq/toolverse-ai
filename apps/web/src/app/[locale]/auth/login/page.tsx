@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { buildPageMetadata } from "@/lib/seo";
 import { Card } from "@/components/ui/card";
@@ -35,7 +36,9 @@ export default async function LoginPage({
         <h1 className="font-display text-2xl font-semibold tracking-tight">{t("loginTitle")}</h1>
         <p className="mt-2 text-sm text-[var(--muted)]">{t("loginSupporting")}</p>
         <div className="mt-6">
-          <LoginForm />
+          <Suspense fallback={<p className="text-sm text-[var(--muted)]">…</p>}>
+            <LoginForm />
+          </Suspense>
         </div>
       </Card>
     </div>

@@ -9,13 +9,17 @@ import {
   useState,
   type ReactNode,
 } from "react";
-import {
-  api,
-  clearTokens,
-  getRefreshToken,
-  setTokens,
-} from "@/lib/api";
-import { getAccessToken, type AuthUser } from "@/lib/auth";
+import { createClient } from "@/utils/supabase/client";
+import { clearTokens } from "@/lib/auth";
+import type { AuthUser } from "@/lib/auth";
+import { mapSupabaseUser, type ProfileRow } from "@/lib/supabase-user";
+
+export class AuthNeedsConfirmationError extends Error {
+  constructor() {
+    super("EMAIL_CONFIRMATION_REQUIRED");
+    this.name = "AuthNeedsConfirmationError";
+  }
+}
 
 interface AuthContextValue {
   user: AuthUser | null;
@@ -32,68 +36,116 @@ interface AuthContextValue {
 
 const AuthContext = createContext<AuthContextValue | null>(null);
 
+async function loadProfile(
+  userId: string,
+): Promise<ProfileRow | null> {
+  const supabase = createClient();
+  const { data, error } = await supabase
+    .from("profiles")
+    .select(
+      "id, email, display_name, avatar_url, locale, theme, public_username, is_public, headline, bio, role, created_at, updated_at",
+    )
+    .eq("id", userId)
+    .maybeSingle();
+
+  if (error) {
+    console.warn("[auth] profiles fetch failed", error.message);
+    return null;
+  }
+  return data as ProfileRow | null;
+}
+
 export function AuthProvider({ children }: { children: ReactNode }) {
   const [user, setUser] = useState<AuthUser | null>(null);
   const [isLoading, setIsLoading] = useState(true);
 
   const refreshUser = useCallback(async () => {
-    if (!getAccessToken()) {
+    const supabase = createClient();
+    const {
+      data: { user: authUser },
+    } = await supabase.auth.getUser();
+
+    if (!authUser) {
       setUser(null);
       return;
     }
-    try {
-      const me = await api.me();
-      setUser(me);
-    } catch {
-      clearTokens();
-      setUser(null);
-    }
+
+    const profile = await loadProfile(authUser.id);
+    setUser(mapSupabaseUser(authUser, profile));
   }, []);
 
   useEffect(() => {
+    const supabase = createClient();
+    let mounted = true;
+
     void (async () => {
       try {
         await refreshUser();
       } finally {
-        setIsLoading(false);
+        if (mounted) setIsLoading(false);
       }
     })();
+
+    const {
+      data: { subscription },
+    } = supabase.auth.onAuthStateChange(() => {
+      void refreshUser();
+    });
+
+    return () => {
+      mounted = false;
+      subscription.unsubscribe();
+    };
   }, [refreshUser]);
 
   const login = useCallback(async (email: string, password: string) => {
-    const result = await api.login(email, password);
-    const access = "access" in result ? result.access : undefined;
-    const refresh = "refresh" in result ? result.refresh : undefined;
-    if (!access || !refresh) {
-      throw new Error("Invalid login response");
-    }
-    setTokens({ access, refresh });
-    if (result.user) {
-      setUser(result.user);
-    } else {
-      await refreshUser();
-    }
+    const supabase = createClient();
+    const { error } = await supabase.auth.signInWithPassword({
+      email,
+      password,
+    });
+    if (error) throw error;
+    // Django JWT tokens are unused for session now.
+    clearTokens();
+    await refreshUser();
   }, [refreshUser]);
 
   const register = useCallback(
     async (input: { email: string; name: string; password: string }) => {
-      const result = await api.register(input);
-      setTokens(result.tokens);
-      setUser(result.user);
+      const supabase = createClient();
+      const origin =
+        typeof window !== "undefined" ? window.location.origin : "";
+      const locale =
+        typeof window !== "undefined"
+          ? window.location.pathname.split("/")[1] || "en"
+          : "en";
+
+      const { data, error } = await supabase.auth.signUp({
+        email: input.email,
+        password: input.password,
+        options: {
+          data: { name: input.name },
+          emailRedirectTo: `${origin}/auth/callback?next=/${locale}/dashboard`,
+        },
+      });
+      if (error) throw error;
+
+      clearTokens();
+
+      if (!data.session) {
+        throw new AuthNeedsConfirmationError();
+      }
+
+      await refreshUser();
     },
-    [],
+    [refreshUser],
   );
 
   const logout = useCallback(async () => {
-    const refresh = getRefreshToken();
-    try {
-      if (refresh) await api.logout(refresh);
-    } catch {
-      // ignore
-    } finally {
-      clearTokens();
-      setUser(null);
-    }
+    const supabase = createClient();
+    await supabase.auth.signOut();
+    clearTokens();
+    setUser(null);
   }, []);
 
   const value = useMemo(

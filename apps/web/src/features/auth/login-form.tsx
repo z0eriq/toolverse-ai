@@ -6,6 +6,7 @@ import { z } from "zod";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { useRouter } from "@/i18n/navigation";
+import { useSearchParams } from "next/navigation";
 import { useAuth } from "@/features/auth/auth-context";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -19,10 +20,18 @@ const schema = z.object({
 
 type FormValues = z.infer<typeof schema>;
 
+function safeNextPath(raw: string | null): string {
+  if (!raw || !raw.startsWith("/") || raw.startsWith("//")) {
+    return "/dashboard";
+  }
+  return raw;
+}
+
 export function LoginForm() {
   const t = useTranslations("auth");
   const { login } = useAuth();
   const router = useRouter();
+  const searchParams = useSearchParams();
   const [error, setError] = useState<string | null>(null);
 
   const {
@@ -38,7 +47,16 @@ export function LoginForm() {
     setError(null);
     try {
       await login(values.email, values.password);
-      router.push("/dashboard");
+      const next = safeNextPath(searchParams.get("next"));
+      // Strip locale prefix for next-intl router if present
+      const locales = ["ar", "en", "es", "fr", "de", "pt", "zh"];
+      const parts = next.split("/");
+      const maybeLocale = parts[1];
+      const path =
+        maybeLocale && locales.includes(maybeLocale)
+          ? `/${parts.slice(2).join("/")}` || "/dashboard"
+          : next;
+      router.push(path.startsWith("/") ? path : "/dashboard");
     } catch {
       setError(t("errors.generic"));
     }
