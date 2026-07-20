@@ -26,7 +26,7 @@ export default function HomeLoading() {
           </div>
         ))}
       </div>
-      <span className="sr-only">Loading homepage…</span>
+      <span className="sr-only">Loading…</span>
     </div>
   );
 }

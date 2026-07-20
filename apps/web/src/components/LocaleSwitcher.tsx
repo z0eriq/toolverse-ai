@@ -4,6 +4,7 @@ import { useEffect, useState, useTransition } from "react";
 import { useLocale, useTranslations } from "next-intl";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { LOCALE_LABELS, locales, type AppLocale } from "@/i18n/routing";
+import { LOCALE_CHOSEN_COOKIE } from "@/i18n/locale-preference";
 
 /**
  * Locale select: update the control immediately, run navigation in a
@@ -21,6 +22,12 @@ export function LocaleSwitcher() {
     setDisplayLocale(locale);
   }, [locale]);
 
+  function markExplicitLocaleChoice() {
+    // Remember that the user picked a language so middleware won't override
+    // it with Accept-Language on the next visit.
+    document.cookie = `${LOCALE_CHOSEN_COOKIE}=1; Path=/; Max-Age=31536000; SameSite=Lax`;
+  }
+
   return (
     <>
       <label className="sr-only" htmlFor="locale-switcher">
@@ -37,6 +44,7 @@ export function LocaleSwitcher() {
           const next = e.target.value;
           // Synchronous UI update — lets the select paint before navigation work.
           setDisplayLocale(next);
+          markExplicitLocaleChoice();
           startTransition(() => {
             router.replace(pathname, { locale: next });
           });

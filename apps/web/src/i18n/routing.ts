@@ -7,6 +7,8 @@ export const routing = defineRouting({
   locales,
   defaultLocale: "en",
   localePrefix: "as-needed",
+  // Match browser/device language (Accept-Language) on first visit.
+  localeDetection: true,
 });
 
 export const RTL_LOCALES = new Set<AppLocale>(["ar"]);

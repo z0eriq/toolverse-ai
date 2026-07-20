@@ -1,6 +1,7 @@
 import createIntlMiddleware from "next-intl/middleware";
 import { type NextRequest, NextResponse } from "next/server";
 import { routing } from "./i18n/routing";
+import { LOCALE_CHOSEN_COOKIE } from "./i18n/locale-preference";
 import { updateSession } from "./utils/supabase/middleware";
 
 const handleI18nRouting = createIntlMiddleware(routing);
@@ -23,11 +24,37 @@ function copyCookies(from: NextResponse, to: NextResponse) {
   return to;
 }
 
+/**
+ * next-intl prefers NEXT_LOCALE over Accept-Language. For visitors who never
+ * explicitly chose a language, strip that cookie so the browser/device language
+ * wins (e.g. Arabic phones → /ar).
+ */
+function requestForLocaleNegotiation(request: NextRequest): NextRequest {
+  const explicit = request.cookies.get(LOCALE_CHOSEN_COOKIE)?.value === "1";
+  if (explicit || !request.cookies.get("NEXT_LOCALE")) {
+    return request;
+  }
+
+  const kept = request.cookies
+    .getAll()
+    .filter((c) => c.name !== "NEXT_LOCALE")
+    .map((c) => `${c.name}=${encodeURIComponent(c.value)}`)
+    .join("; ");
+
+  const headers = new Headers(request.headers);
+  if (kept) headers.set("cookie", kept);
+  else headers.delete("cookie");
+
+  return new NextRequest(request.url, {
+    headers,
+    method: request.method,
+  });
+}
+
 export default async function middleware(request: NextRequest) {
   const { response: supabaseResponse, user } = await updateSession(request);
   const { pathname } = request.nextUrl;
 
-  // Skip i18n for the OAuth/email PKCE callback.
   if (pathname.startsWith("/auth/callback")) {
     return supabaseResponse;
   }
@@ -40,7 +67,8 @@ export default async function middleware(request: NextRequest) {
     return copyCookies(supabaseResponse, NextResponse.redirect(loginUrl));
   }
 
-  const response = handleI18nRouting(request);
+  const intlRequest = requestForLocaleNegotiation(request);
+  const response = handleI18nRouting(intlRequest);
   return copyCookies(supabaseResponse, response);
 }
 
