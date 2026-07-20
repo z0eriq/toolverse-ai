@@ -110,7 +110,10 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-[var(--border)] py-4 text-center text-xs text-[var(--muted)]">
-        © {year} {site}. {t("rights")}
+        <p>
+          © {year} {site}. {t("rights")}
+        </p>
+        <p className="mt-1">{t("madeWith")}</p>
       </div>
     </footer>
   );
