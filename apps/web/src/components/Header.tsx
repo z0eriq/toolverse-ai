@@ -1,21 +1,18 @@
 "use client";
 
-import { useLocale, useTranslations } from "next-intl";
+import { useTranslations } from "next-intl";
 import { Menu, Search, X } from "lucide-react";
 import { useState } from "react";
-import { Link, usePathname, useRouter } from "@/i18n/navigation";
+import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/ThemeToggle";
+import { LocaleSwitcher } from "@/components/LocaleSwitcher";
 import { SearchCommand } from "@/components/SearchCommand";
 import { useAuth } from "@/features/auth/auth-context";
 import { cn } from "@/lib/utils";
-import { LOCALE_LABELS, locales, type AppLocale } from "@/i18n/routing";
 
 export function Header() {
   const t = useTranslations("nav");
-  const locale = useLocale();
-  const pathname = usePathname();
-  const router = useRouter();
   const { user, logout, isLoading } = useAuth();
   const [open, setOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
@@ -26,10 +23,6 @@ export function Header() {
     { href: "/blog", label: t("blog") },
     { href: "/developers", label: t("developers") },
   ] as const;
-
-  function switchLocale(next: string) {
-    router.replace(pathname, { locale: next });
-  }
 
   return (
     <>
@@ -78,22 +71,7 @@ export function Header() {
             >
               <Search className="h-4 w-4" aria-hidden />
             </Button>
-            <label className="sr-only" htmlFor="locale-switcher">
-              {t("language")}
-            </label>
-            <select
-              id="locale-switcher"
-              value={locale}
-              aria-label={t("language")}
-              className="h-8 rounded-[var(--radius-md)] border border-transparent bg-transparent px-1.5 text-xs font-medium text-[var(--muted)] outline-none hover:text-[var(--foreground)] focus-visible:border-[var(--border)]"
-              onChange={(e) => switchLocale(e.target.value)}
-            >
-              {locales.map((code) => (
-                <option key={code} value={code}>
-                  {LOCALE_LABELS[code as AppLocale]}
-                </option>
-              ))}
-            </select>
+            <LocaleSwitcher />
             <ThemeToggle />
             <div className="hidden items-center gap-2 sm:flex">
               {!isLoading && !user ? (
